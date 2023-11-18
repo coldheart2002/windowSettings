@@ -1,0 +1,271 @@
+$leftSidebarSize: 300px;
+
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  // border: solid 1px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(49, 48, 48);
+  scroll-behavior: smooth;
+}
+
+span {
+  cursor: pointer;
+  background-color: transparent;
+}
+.contentContainer {
+  @include flex(row, center, center);
+
+  .leftSidebar {
+    width: $leftSidebarSize;
+    height: 100vh;
+    padding-left: 15px;
+    .heading {
+      @include flex(row, center, center);
+      span {
+        margin: 15px 15px 15px 0;
+      }
+      p {
+        flex: 1;
+      }
+    }
+    .accountContainer {
+      @include flex(row, center, center);
+      span {
+        font-size: 60px;
+        margin: 15px 15px 15px 0;
+      }
+      .accDetails {
+        flex: 1;
+        p {
+          .userName {
+            font-weight: bold;
+          }
+          line-height: 20px;
+        }
+      }
+    }
+    .searchContainer {
+      position: relative;
+      margin-bottom: 15px;
+      input {
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        outline: none;
+        border: solid 1px;
+      }
+      span {
+        position: absolute;
+        transform: translateY(-50%);
+      }
+
+      .close {
+        right: 50px;
+        top: 50%;
+      }
+      .search {
+        right: 10px;
+        top: 50%;
+      }
+    }
+
+    ul {
+      .liActive {
+        background-color: rgb(107, 107, 107);
+      }
+      li {
+        @include flex(row, center, center);
+        position: relative;
+        list-style: none;
+        padding: 5px;
+        cursor: pointer;
+        margin: 5px;
+        border-radius: 7px;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+          background-color: rgb(107, 107, 107);
+        }
+        .indicator {
+          position: absolute;
+          border-radius: 5px;
+          width: 4px;
+          background-color: lightblue;
+          height: 15px;
+          transform: translateY(-50%);
+          top: 50%;
+          left: 0;
+          display: none;
+          transition: all 0.3s ease-out;
+        }
+        span {
+          margin-right: 15px;
+          margin-left: 15px;
+          font-size: 1.5rem;
+          background-color: transparent;
+        }
+        p {
+          flex: 1;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .settingContents {
+    height: 100vh;
+    flex: 1;
+    z-index: 10;
+    position: relative;
+    p {
+      position: absolute;
+      background-color: transparent;
+      top: 70px;
+      left: 120px;
+      font-size: 2rem;
+    }
+    .contents {
+      display: none;
+      width: 90%;
+      margin-left: 10%;
+      padding-top: 120px;
+    }
+    .activeContents {
+      height: 100vh;
+      flex: 1;
+      display: block;
+    }
+    .mainContainer {
+      height: 585px;
+      // width: 1000px;
+      overflow: auto;
+      .settingsMainContent {
+        width: 90%;
+        .mainSettingOptionUl {
+          list-style: none;
+          .mainSettingOptionLi {
+            @include flex(row, center, start);
+            background-color: rgb(50, 49, 49);
+            position: relative;
+            height: 70px;
+            border: solid 1px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(340, 340, 340, 0.2);
+            }
+
+            .mainSettingIcon {
+              margin: 20px;
+            }
+            .detailContainer {
+              @include flex(column, start, center);
+              line-height: 20px;
+              background-color: transparent;
+              .mainSettingName {
+                background-color: transparent;
+                font-weight: bold;
+              }
+              .mainSettingDescription {
+                background-color: transparent;
+                font-size: 0.8rem;
+              }
+            }
+            .navNext {
+              position: absolute;
+              right: 20px;
+            }
+          }
+        }
+      }
+    }
+    .systemContainer {
+      .header {
+        @include flex(row, center, space-between);
+        position: relative;
+        width: 90%;
+        .leftHeader {
+          @include flex(row, center, center);
+          span {
+            font-size: 80px;
+            margin-right: 20px;
+          }
+          .pcInfo {
+            @include flex(column, start, space-evenly);
+            height: 60px;
+            .pcName {
+              font-weight: bold;
+            }
+            .pcBrand {
+              font-size: 0.8rem;
+            }
+            .rename {
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .rightHeader {
+          @include flex(row, center, center);
+          .rightHeaderOptions {
+            @include flex(row, center, center);
+            margin-left: 35px;
+            padding: 7px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(340, 340, 340, 0.2);
+            }
+            span {
+              margin-right: 10px;
+              font-size: 2rem;
+            }
+            .info {
+              @include flex(column, start, space-between);
+              height: 40px;
+              background-color: transparent;
+              .name {
+                font-weight: bold;
+                background-color: transparent;
+              }
+              .details {
+                font-size: 0.8rem;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bluetoothContainer {
+    }
+    .networkContainer {
+    }
+    .personalizationContainer {
+    }
+    .appsContainer {
+    }
+    .accountsContainer {
+    }
+    .timeContainer {
+    }
+    .gamingContainer {
+    }
+    .accessibilityContainer {
+    }
+    .privacyContainer {
+    }
+    .updateContainer {
+    }
+  }
+}
