@@ -1,0 +1,63 @@
+.lightMode {
+  color: rgb(50, 50, 50);
+  background-color: rgb(233, 233, 233);
+
+  input {
+    background-color: rgb(210, 210, 210, 0.3);
+  }
+
+  span {
+    color: rgb(50, 50, 50);
+  }
+  li {
+    .indicator {
+      background-color: black;
+    }
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+  .liActive {
+    background-color: lightgray;
+  }
+
+  .rightHeaderOptions {
+    &:hover {
+      background-color: rgb(210, 210, 210, 0.3);
+    }
+  }
+
+  .microsoft,
+  .devices,
+  .recommendation,
+  .personalize {
+    background-color: white;
+  }
+
+  .mainSettingOptionLi {
+    background-color: white;
+    &:hover {
+      background-color: rgb(210, 210, 210, 0.3);
+    }
+  }
+
+  button {
+    aspect-ratio: 1.5/1;
+    margin-right: 50px;
+    width: 50px;
+    border-radius: 20px;
+    border: solid 1px;
+    position: relative;
+    padding: 1px;
+    background-color: rgb(50, 50, 50);
+    transition: all 0.3s ease-in-out;
+    .wheel {
+      aspect-ratio: 1/1;
+      height: 30px;
+      border-radius: 50%;
+      border: solid 1px;
+      background-color: rgb(233, 233, 233);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
