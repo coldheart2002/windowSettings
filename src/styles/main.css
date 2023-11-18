@@ -29,13 +29,36 @@ body {
 .darkMode .rightHeaderOptions:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.darkMode .mainSettingOptionLi {
+  background-color: rgb(60, 60, 60);
+}
 .darkMode .mainSettingOptionLi:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.darkMode button {
+  aspect-ratio: 1.5/1;
+  margin-right: 50px;
+  width: 50px;
+  border-radius: 20px;
+  border: solid 1px;
+  position: relative;
+  padding: 1px;
+  background-color: rgb(233, 233, 233);
+  transition: all 0.3s ease-in-out;
+}
+.darkMode button .wheel {
+  aspect-ratio: 1/1;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px;
+  background-color: rgb(50, 50, 50);
+  transform: translateX(55%);
+  transition: all 0.5s ease-in-out;
 }
 
 .lightMode {
   color: rgb(50, 50, 50);
-  background-color: white;
+  background-color: rgb(233, 233, 233);
 }
 .lightMode span {
   color: rgb(50, 50, 50);
@@ -52,8 +75,30 @@ body {
 .lightMode .rightHeaderOptions:hover {
   background-color: rgba(210, 210, 210, 0.3);
 }
+.lightMode .mainSettingOptionLi {
+  background-color: white;
+}
 .lightMode .mainSettingOptionLi:hover {
   background-color: rgba(210, 210, 210, 0.3);
+}
+.lightMode button {
+  aspect-ratio: 1.5/1;
+  margin-right: 50px;
+  width: 50px;
+  border-radius: 20px;
+  border: solid 1px;
+  position: relative;
+  padding: 1px;
+  background-color: rgb(50, 50, 50);
+  transition: all 0.3s ease-in-out;
+}
+.lightMode button .wheel {
+  aspect-ratio: 1/1;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px;
+  background-color: rgb(233, 233, 233);
+  transition: all 0.5s ease-in-out;
 }
 
 span {
@@ -173,6 +218,7 @@ span {
   top: 70px;
   left: 120px;
   font-size: 2rem;
+  font-weight: 600;
 }
 .contentContainer .settingContents .contents {
   display: none;

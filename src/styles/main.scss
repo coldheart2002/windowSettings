@@ -51,15 +51,37 @@ body {
   }
 
   .mainSettingOptionLi {
+    background-color: rgb(60, 60, 60);
     &:hover {
       background-color: rgb(340, 340, 340, 0.1);
+    }
+  }
+
+  button {
+    aspect-ratio: 1.5/1;
+    margin-right: 50px;
+    width: 50px;
+    border-radius: 20px;
+    border: solid 1px;
+    position: relative;
+    padding: 1px;
+    background-color: rgb(233, 233, 233);
+    transition: all 0.3s ease-in-out;
+    .wheel {
+      aspect-ratio: 1/1;
+      height: 30px;
+      border-radius: 50%;
+      border: solid 1px;
+      background-color: rgb(50, 50, 50);
+      transform: translateX(55%);
+      transition: all 0.5s ease-in-out;
     }
   }
 }
 
 .lightMode {
   color: rgb(50, 50, 50);
-  background-color: white;
+  background-color: rgb(233, 233, 233);
   span {
     color: rgb(50, 50, 50);
   }
@@ -82,8 +104,29 @@ body {
   }
 
   .mainSettingOptionLi {
+    background-color: white;
     &:hover {
       background-color: rgb(210, 210, 210, 0.3);
+    }
+  }
+
+  button {
+    aspect-ratio: 1.5/1;
+    margin-right: 50px;
+    width: 50px;
+    border-radius: 20px;
+    border: solid 1px;
+    position: relative;
+    padding: 1px;
+    background-color: rgb(50, 50, 50);
+    transition: all 0.3s ease-in-out;
+    .wheel {
+      aspect-ratio: 1/1;
+      height: 30px;
+      border-radius: 50%;
+      border: solid 1px;
+      background-color: rgb(233, 233, 233);
+      transition: all 0.5s ease-in-out;
     }
   }
 }
@@ -109,6 +152,23 @@ span {
       p {
         flex: 1;
       }
+      // button {
+      //   aspect-ratio: 1.5/1;
+      //   margin-right: 100px;
+      //   width: 50px;
+      //   border-radius: 20px;
+      //   border: solid 1px;
+      //   position: relative;
+      //   padding: 1px;
+      //   background-color: rgb(50, 50, 50);
+      //   .wheel {
+      //     aspect-ratio: 1/1;
+      //     height: 30px;
+      //     border-radius: 50%;
+      //     border: solid 1px;
+      //     background-color: rgb(233, 233, 233);
+      //   }
+      // }
     }
     .accountContainer {
       @include flex(row, center, center);
@@ -204,6 +264,7 @@ span {
       top: 70px;
       left: 120px;
       font-size: 2rem;
+      font-weight: 600;
     }
     .contents {
       display: none;
@@ -319,6 +380,7 @@ span {
         }
       }
     }
+
     .bluetoothContainer {
       // background-color: red;
     }
