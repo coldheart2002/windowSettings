@@ -1,18 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  transition: all 0.3s ease;
-}
-
 .darkMode {
   color: white;
   background-color: rgb(50, 50, 50);
+}
+.darkMode input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
 }
 .darkMode span {
   color: white;
@@ -28,6 +20,12 @@ body {
 }
 .darkMode .rightHeaderOptions:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.darkMode .microsoft,
+.darkMode .devices,
+.darkMode .recommendation,
+.darkMode .personalize {
+  background-color: rgb(60, 60, 60);
 }
 .darkMode .mainSettingOptionLi {
   background-color: rgb(60, 60, 60);
@@ -60,6 +58,9 @@ body {
   color: rgb(50, 50, 50);
   background-color: rgb(233, 233, 233);
 }
+.lightMode input {
+  background-color: rgba(210, 210, 210, 0.3);
+}
 .lightMode span {
   color: rgb(50, 50, 50);
 }
@@ -74,6 +75,12 @@ body {
 }
 .lightMode .rightHeaderOptions:hover {
   background-color: rgba(210, 210, 210, 0.3);
+}
+.lightMode .microsoft,
+.lightMode .devices,
+.lightMode .recommendation,
+.lightMode .personalize {
+  background-color: white;
 }
 .lightMode .mainSettingOptionLi {
   background-color: white;
@@ -101,6 +108,19 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: all 0.3s ease;
+}
+
 span {
   cursor: pointer;
   background-color: transparent;
@@ -125,10 +145,13 @@ span {
   justify-content: center;
 }
 .contentContainer .leftSidebar .heading span {
-  margin: 15px 15px 15px 0;
+  margin: 15px 10px 10px 0;
 }
 .contentContainer .leftSidebar .heading p {
   flex: 1;
+}
+.contentContainer .leftSidebar .heading button {
+  cursor: pointer;
 }
 .contentContainer .leftSidebar .accountContainer {
   display: flex;
@@ -138,7 +161,7 @@ span {
 }
 .contentContainer .leftSidebar .accountContainer span {
   font-size: 60px;
-  margin: 15px 15px 15px 0;
+  margin: 5px 10px 10px 0;
 }
 .contentContainer .leftSidebar .accountContainer .accDetails {
   flex: 1;
@@ -158,7 +181,7 @@ span {
   width: 100%;
   border-radius: 5px;
   outline: none;
-  border: solid 1px;
+  border-bottom: solid 1px;
 }
 .contentContainer .leftSidebar .searchContainer span {
   position: absolute;
@@ -215,7 +238,7 @@ span {
 .contentContainer .settingContents p {
   position: absolute;
   background-color: transparent;
-  top: 70px;
+  top: 50px;
   left: 120px;
   font-size: 2rem;
   font-weight: 600;
@@ -224,7 +247,7 @@ span {
   display: none;
   width: 90%;
   margin-left: 10%;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 .contentContainer .settingContents .activeContents {
   height: 100vh;
@@ -276,47 +299,94 @@ span {
   position: absolute;
   right: 20px;
 }
-.contentContainer .settingContents .systemContainer .header {
+.contentContainer .settingContents .homeContainer .settingsMainContent {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent div {
+  border-radius: 7px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent {
+  flex: 1;
+  padding-right: 3px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft {
+  border: solid 1px;
+  height: 270px;
+  margin-bottom: 5px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .devices {
+  border: solid 1px;
+  height: 220px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .rightContent {
+  padding-left: 3px;
+  flex: 1;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .rightContent .recommendation {
+  border: solid 1px;
+  height: 300px;
+  margin-bottom: 5px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .rightContent .personalize {
+  border: solid 1px;
+  height: 320px;
+}
+.contentContainer .settingContents .systemContainer .header,
+.contentContainer .settingContents .homeContainer .header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   position: relative;
   width: 90%;
 }
-.contentContainer .settingContents .systemContainer .header .leftHeader {
+.contentContainer .settingContents .systemContainer .header .leftHeader,
+.contentContainer .settingContents .homeContainer .header .leftHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.contentContainer .settingContents .systemContainer .header .leftHeader span {
+.contentContainer .settingContents .systemContainer .header .leftHeader span,
+.contentContainer .settingContents .homeContainer .header .leftHeader span {
   font-size: 80px;
   margin-right: 20px;
 }
-.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo {
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 60px;
 }
-.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .pcName {
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .pcName,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo .pcName {
   font-weight: bold;
 }
-.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .pcBrand {
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .pcBrand,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo .pcBrand {
   font-size: 0.8rem;
 }
-.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .rename {
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .rename,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo .rename {
   font-size: 0.8rem;
 }
-.contentContainer .settingContents .systemContainer .header .rightHeader {
+.contentContainer .settingContents .systemContainer .header .rightHeader,
+.contentContainer .settingContents .homeContainer .header .rightHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+  flex: 1;
+  flex-wrap: wrap;
 }
-.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions {
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -326,11 +396,13 @@ span {
   border-radius: 5px;
   cursor: pointer;
 }
-.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions span {
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions span,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions span {
   margin-right: 10px;
   font-size: 2rem;
 }
-.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions .info {
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions .info,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions .info {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -338,11 +410,13 @@ span {
   height: 40px;
   background-color: transparent;
 }
-.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions .info .name {
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions .info .name,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions .info .name {
   font-weight: bold;
   background-color: transparent;
 }
-.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions .info .details {
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions .info .details,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions .info .details {
   font-size: 0.8rem;
   background-color: transparent;
 }/*# sourceMappingURL=main.css.map */

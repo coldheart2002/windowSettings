@@ -1,134 +1,30 @@
-$leftSidebarSize: 300px;
-
+@import "./darkTheme";
+@import "./lightTheme";
 @mixin flex($direction, $align, $justify) {
   display: flex;
   flex-direction: $direction;
   align-items: $align;
   justify-content: $justify;
 }
+
+$leftSidebarSize: 300px;
+
 * {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
   // border: solid 1px;
-  // font-size: 1rem;
+  font-size: 1rem;
   // color: white;
   // background-color: rgb(50, 50, 50);
   // color: rgb(50, 50, 50);
   // background-color: white;
   scroll-behavior: smooth;
-  // transition: all 0.5 ease;
 }
 
 body {
   transition: all 0.3s ease;
-}
-
-.darkMode {
-  color: white;
-  background-color: rgb(50, 50, 50);
-  span {
-    color: white;
-  }
-
-  li {
-    .indicator {
-      background-color: white;
-    }
-    &:hover {
-      background-color: rgb(100, 100, 100);
-    }
-  }
-  .liActive {
-    background-color: rgb(100, 100, 100);
-  }
-
-  .rightHeaderOptions {
-    &:hover {
-      background-color: rgb(340, 340, 340, 0.1);
-    }
-  }
-
-  .mainSettingOptionLi {
-    background-color: rgb(60, 60, 60);
-    &:hover {
-      background-color: rgb(340, 340, 340, 0.1);
-    }
-  }
-
-  button {
-    aspect-ratio: 1.5/1;
-    margin-right: 50px;
-    width: 50px;
-    border-radius: 20px;
-    border: solid 1px;
-    position: relative;
-    padding: 1px;
-    background-color: rgb(233, 233, 233);
-    transition: all 0.3s ease-in-out;
-    .wheel {
-      aspect-ratio: 1/1;
-      height: 30px;
-      border-radius: 50%;
-      border: solid 1px;
-      background-color: rgb(50, 50, 50);
-      transform: translateX(55%);
-      transition: all 0.5s ease-in-out;
-    }
-  }
-}
-
-.lightMode {
-  color: rgb(50, 50, 50);
-  background-color: rgb(233, 233, 233);
-  span {
-    color: rgb(50, 50, 50);
-  }
-  li {
-    .indicator {
-      background-color: black;
-    }
-    &:hover {
-      background-color: lightgray;
-    }
-  }
-  .liActive {
-    background-color: lightgray;
-  }
-
-  .rightHeaderOptions {
-    &:hover {
-      background-color: rgb(210, 210, 210, 0.3);
-    }
-  }
-
-  .mainSettingOptionLi {
-    background-color: white;
-    &:hover {
-      background-color: rgb(210, 210, 210, 0.3);
-    }
-  }
-
-  button {
-    aspect-ratio: 1.5/1;
-    margin-right: 50px;
-    width: 50px;
-    border-radius: 20px;
-    border: solid 1px;
-    position: relative;
-    padding: 1px;
-    background-color: rgb(50, 50, 50);
-    transition: all 0.3s ease-in-out;
-    .wheel {
-      aspect-ratio: 1/1;
-      height: 30px;
-      border-radius: 50%;
-      border: solid 1px;
-      background-color: rgb(233, 233, 233);
-      transition: all 0.5s ease-in-out;
-    }
-  }
 }
 
 span {
@@ -146,35 +42,23 @@ span {
     padding-left: 15px;
     .heading {
       @include flex(row, center, center);
+      // border: solid 1px;
       span {
-        margin: 15px 15px 15px 0;
+        margin: 15px 10px 10px 0;
       }
       p {
         flex: 1;
       }
-      // button {
-      //   aspect-ratio: 1.5/1;
-      //   margin-right: 100px;
-      //   width: 50px;
-      //   border-radius: 20px;
-      //   border: solid 1px;
-      //   position: relative;
-      //   padding: 1px;
-      //   background-color: rgb(50, 50, 50);
-      //   .wheel {
-      //     aspect-ratio: 1/1;
-      //     height: 30px;
-      //     border-radius: 50%;
-      //     border: solid 1px;
-      //     background-color: rgb(233, 233, 233);
-      //   }
-      // }
+      button {
+        cursor: pointer;
+      }
     }
     .accountContainer {
       @include flex(row, center, center);
+      // border: solid 1px;
       span {
         font-size: 60px;
-        margin: 15px 15px 15px 0;
+        margin: 5px 10px 10px 0;
       }
       .accDetails {
         flex: 1;
@@ -194,7 +78,7 @@ span {
         width: 100%;
         border-radius: 5px;
         outline: none;
-        border: solid 1px;
+        border-bottom: solid 1px;
       }
       span {
         position: absolute;
@@ -261,7 +145,7 @@ span {
     p {
       position: absolute;
       background-color: transparent;
-      top: 70px;
+      top: 50px;
       left: 120px;
       font-size: 2rem;
       font-weight: 600;
@@ -270,7 +154,7 @@ span {
       display: none;
       width: 90%;
       margin-left: 10%;
-      padding-top: 120px;
+      padding-top: 100px;
     }
     .activeContents {
       height: 100vh;
@@ -323,9 +207,46 @@ span {
         }
       }
     }
-    .systemContainer {
+
+    .homeContainer {
+      .settingsMainContent {
+        @include flex(row, start, center);
+        div {
+          border-radius: 7px;
+        }
+        .leftContent {
+          flex: 1;
+          padding-right: 3px;
+          .microsoft {
+            border: solid 1px;
+            height: 270px;
+            margin-bottom: 5px;
+          }
+          .devices {
+            border: solid 1px;
+            height: 220px;
+          }
+        }
+        .rightContent {
+          padding-left: 3px;
+          flex: 1;
+          .recommendation {
+            border: solid 1px;
+            height: 300px;
+            margin-bottom: 5px;
+          }
+          .personalize {
+            border: solid 1px;
+            height: 320px;
+          }
+        }
+      }
+    }
+    .systemContainer,
+    .homeContainer {
       .header {
-        @include flex(row, center, space-between);
+        @include flex(row, center, center);
+        flex-wrap: wrap;
         position: relative;
         width: 90%;
         .leftHeader {
@@ -335,7 +256,7 @@ span {
             margin-right: 20px;
           }
           .pcInfo {
-            @include flex(column, start, space-evenly);
+            @include flex(column, start, center);
             height: 60px;
             .pcName {
               font-weight: bold;
@@ -349,7 +270,9 @@ span {
           }
         }
         .rightHeader {
-          @include flex(row, center, center);
+          @include flex(row, center, end);
+          flex: 1;
+          flex-wrap: wrap;
           .rightHeaderOptions {
             @include flex(row, center, center);
             margin-left: 35px;
