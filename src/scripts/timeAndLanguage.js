@@ -1,8 +1,8 @@
+timeAndLanguage();
 function timeAndLanguage() {
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Time & language";
-  settingsMainContent[6].append(container);
+  settingsMainContent[7].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
   let listContents = [
     "Display",

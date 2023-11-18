@@ -1,8 +1,8 @@
+apps();
 function apps() {
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Apps";
-  settingsMainContent[4].append(container);
+  settingsMainContent[5].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
   let listContents = [
     "Display",

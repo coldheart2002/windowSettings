@@ -1,8 +1,8 @@
+gaming();
 function gaming() {
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Gaming";
-  settingsMainContent[7].append(container);
+  settingsMainContent[8].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
   let listContents = [
     "Display",

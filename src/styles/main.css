@@ -3,15 +3,63 @@
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
-  font-size: 1rem;
-  color: white;
-  background-color: rgb(49, 48, 48);
   scroll-behavior: smooth;
+}
+
+body {
+  transition: all 0.3s ease;
+}
+
+.darkMode {
+  color: white;
+  background-color: rgb(50, 50, 50);
+}
+.darkMode span {
+  color: white;
+}
+.darkMode li .indicator {
+  background-color: white;
+}
+.darkMode li:hover {
+  background-color: rgb(100, 100, 100);
+}
+.darkMode .liActive {
+  background-color: rgb(100, 100, 100);
+}
+.darkMode .rightHeaderOptions:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.darkMode .mainSettingOptionLi:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lightMode {
+  color: rgb(50, 50, 50);
+  background-color: white;
+}
+.lightMode span {
+  color: rgb(50, 50, 50);
+}
+.lightMode li .indicator {
+  background-color: black;
+}
+.lightMode li:hover {
+  background-color: lightgray;
+}
+.lightMode .liActive {
+  background-color: lightgray;
+}
+.lightMode .rightHeaderOptions:hover {
+  background-color: rgba(210, 210, 210, 0.3);
+}
+.lightMode .mainSettingOptionLi:hover {
+  background-color: rgba(210, 210, 210, 0.3);
 }
 
 span {
   cursor: pointer;
   background-color: transparent;
+  color: white;
 }
 
 .contentContainer {
@@ -79,9 +127,6 @@ span {
   right: 10px;
   top: 50%;
 }
-.contentContainer .leftSidebar ul .liActive {
-  background-color: rgb(107, 107, 107);
-}
 .contentContainer .leftSidebar ul li {
   display: flex;
   flex-direction: row;
@@ -95,14 +140,10 @@ span {
   border-radius: 7px;
   transition: all 0.3s ease-out;
 }
-.contentContainer .leftSidebar ul li:hover {
-  background-color: rgb(107, 107, 107);
-}
 .contentContainer .leftSidebar ul li .indicator {
   position: absolute;
   border-radius: 5px;
   width: 4px;
-  background-color: lightblue;
   height: 15px;
   transform: translateY(-50%);
   top: 50%;
@@ -159,16 +200,12 @@ span {
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  background-color: rgb(50, 49, 49);
   position: relative;
   height: 70px;
   border: solid 1px;
   margin: 5px 0;
   border-radius: 5px;
   cursor: pointer;
-}
-.contentContainer .settingContents .mainContainer .settingsMainContent .mainSettingOptionUl .mainSettingOptionLi:hover {
-  background-color: rgba(255, 255, 255, 0.2);
 }
 .contentContainer .settingContents .mainContainer .settingsMainContent .mainSettingOptionUl .mainSettingOptionLi .mainSettingIcon {
   margin: 20px;
@@ -242,9 +279,6 @@ span {
   padding: 7px 10px;
   border-radius: 5px;
   cursor: pointer;
-}
-.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions:hover {
-  background-color: rgba(255, 255, 255, 0.2);
 }
 .contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions span {
   margin-right: 10px;

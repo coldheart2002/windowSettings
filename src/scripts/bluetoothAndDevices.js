@@ -1,3 +1,4 @@
+bluetoothAndDevices();
 function bluetoothAndDevices() {
   let listContents = [
     "Devices",
@@ -34,8 +35,8 @@ function bluetoothAndDevices() {
   ];
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Bluetooth & devices";
-  settingsMainContent[1].append(container);
+  // title.innerText = "Bluetooth & devices";
+  settingsMainContent[2].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
 
   for (let i = 0; i < listContents.length; i++) {

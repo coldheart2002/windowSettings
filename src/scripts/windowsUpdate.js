@@ -1,8 +1,8 @@
+windowsUpdate();
 function windowsUpdate() {
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Windows update";
-  settingsMainContent[10].append(container);
+  settingsMainContent[11].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
   let listContents = [
     "Display",

@@ -12,15 +12,87 @@ $leftSidebarSize: 300px;
   font-family: sans-serif;
   box-sizing: border-box;
   // border: solid 1px;
-  font-size: 1rem;
-  color: white;
-  background-color: rgb(49, 48, 48);
+  // font-size: 1rem;
+  // color: white;
+  // background-color: rgb(50, 50, 50);
+  // color: rgb(50, 50, 50);
+  // background-color: white;
   scroll-behavior: smooth;
+  // transition: all 0.5 ease;
+}
+
+body {
+  transition: all 0.3s ease;
+}
+
+.darkMode {
+  color: white;
+  background-color: rgb(50, 50, 50);
+  span {
+    color: white;
+  }
+
+  li {
+    .indicator {
+      background-color: white;
+    }
+    &:hover {
+      background-color: rgb(100, 100, 100);
+    }
+  }
+  .liActive {
+    background-color: rgb(100, 100, 100);
+  }
+
+  .rightHeaderOptions {
+    &:hover {
+      background-color: rgb(340, 340, 340, 0.1);
+    }
+  }
+
+  .mainSettingOptionLi {
+    &:hover {
+      background-color: rgb(340, 340, 340, 0.1);
+    }
+  }
+}
+
+.lightMode {
+  color: rgb(50, 50, 50);
+  background-color: white;
+  span {
+    color: rgb(50, 50, 50);
+  }
+  li {
+    .indicator {
+      background-color: black;
+    }
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+  .liActive {
+    background-color: lightgray;
+  }
+
+  .rightHeaderOptions {
+    &:hover {
+      background-color: rgb(210, 210, 210, 0.3);
+    }
+  }
+
+  .mainSettingOptionLi {
+    &:hover {
+      background-color: rgb(210, 210, 210, 0.3);
+    }
+  }
 }
 
 span {
   cursor: pointer;
   background-color: transparent;
+  color: white;
+  // color: black;
 }
 .contentContainer {
   @include flex(row, center, center);
@@ -80,9 +152,9 @@ span {
     }
 
     ul {
-      .liActive {
-        background-color: rgb(107, 107, 107);
-      }
+      // .liActive {
+      //   background-color: rgb(107, 107, 107);
+      // }
       li {
         @include flex(row, center, center);
         position: relative;
@@ -93,14 +165,13 @@ span {
         border-radius: 7px;
         transition: all 0.3s ease-out;
 
-        &:hover {
-          background-color: rgb(107, 107, 107);
-        }
+        // &:hover {
+        //   background-color: rgb(107, 107, 107);
+        // }
         .indicator {
           position: absolute;
           border-radius: 5px;
           width: 4px;
-          background-color: lightblue;
           height: 15px;
           transform: translateY(-50%);
           top: 50%;
@@ -155,16 +226,17 @@ span {
           list-style: none;
           .mainSettingOptionLi {
             @include flex(row, center, start);
-            background-color: rgb(50, 49, 49);
+            // background-color: rgb(50, 49, 49);
             position: relative;
             height: 70px;
             border: solid 1px;
             margin: 5px 0;
             border-radius: 5px;
             cursor: pointer;
-            &:hover {
-              background-color: rgb(340, 340, 340, 0.2);
-            }
+            // &:hover {
+            //   background-color: rgb(340, 340, 340, 0.5);
+            //   // background-color: red;
+            // }
 
             .mainSettingIcon {
               margin: 20px;
@@ -223,9 +295,9 @@ span {
             padding: 7px 10px;
             border-radius: 5px;
             cursor: pointer;
-            &:hover {
-              background-color: rgb(340, 340, 340, 0.2);
-            }
+            // &:hover {
+            //   background-color: rgb(340, 340, 340, 0.5);
+            // }
             span {
               margin-right: 10px;
               font-size: 2rem;
@@ -248,18 +320,25 @@ span {
       }
     }
     .bluetoothContainer {
+      // background-color: red;
     }
     .networkContainer {
+      // background-color: orange;
     }
     .personalizationContainer {
+      // background-color: yellow;
     }
     .appsContainer {
+      // background-color: green;
     }
     .accountsContainer {
+      // background-color: blue;
     }
     .timeContainer {
+      // background-color: violet;
     }
     .gamingContainer {
+      // background-color: gray;
     }
     .accessibilityContainer {
     }

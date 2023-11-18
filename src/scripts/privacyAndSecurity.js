@@ -1,8 +1,8 @@
+privacyAndSecurity()
 function privacyAndSecurity() {
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Privacy & security";
-  settingsMainContent[9].append(container);
+  settingsMainContent[10].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
   let listContents = [
     "Display",

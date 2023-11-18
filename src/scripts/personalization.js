@@ -1,8 +1,8 @@
+personalization();
 function personalization() {
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Personalization";
-  settingsMainContent[3].append(container);
+  settingsMainContent[4].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
   let listContents = [
     "Background",

@@ -1,8 +1,8 @@
+accessibility();
 function accessibility() {
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Accessibility";
-  settingsMainContent[8].append(container);
+  settingsMainContent[9].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
   let listContents = [
     "Display",

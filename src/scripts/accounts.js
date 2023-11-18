@@ -1,8 +1,8 @@
+accounts();
 function accounts() {
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Accounts";
-  settingsMainContent[5].append(container);
+  settingsMainContent[6].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
   let listContents = [
     "Display",

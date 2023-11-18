@@ -1,8 +1,9 @@
+networkAndInternet();
 function networkAndInternet() {
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "Network & internet";
-  settingsMainContent[2].append(container);
+  // title.innerText = "Network & internet";
+  settingsMainContent[3].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
   let listContents = [
     "Wi-Fi",

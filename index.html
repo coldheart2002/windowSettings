@@ -15,12 +15,13 @@
       }
     </style>
   </head>
-  <body>
+  <body class="lightMode">
     <div class="contentContainer">
       <div class="leftSidebar">
         <div class="heading">
           <span class="material-symbols-outlined"> arrow_back </span>
           <p>Setting</p>
+          <button id="switchTheme">Switch Theme</button>
         </div>
         <div class="accountContainer">
           <span class="material-symbols-outlined"> account_circle </span>
@@ -41,57 +42,62 @@
         <!----------------------------- Left Side Bar -->
 
         <ul>
-          <li class="settingsChoices liActive" onclick="system()">
+          <li class="settingsChoices liActive">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> home </span>
+            <p>Home</p>
+          </li>
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> wysiwyg </span>
             <p>System</p>
           </li>
-          <li class="settingsChoices" onclick="bluetoothAndDevices()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> bluetooth </span>
             <p>Bluetooth & devices</p>
           </li>
-          <li class="settingsChoices" onclick="networkAndInternet()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> wifi </span>
             <p>Network & internet</p>
           </li>
-          <li class="settingsChoices" onclick="personalization()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> brush </span>
             <p>Personalization</p>
           </li>
-          <li class="settingsChoices" onclick="apps()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> apps </span>
             <p>Apps</p>
           </li>
-          <li class="settingsChoices" onclick="accounts()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> person </span>
             <p>Accounts</p>
           </li>
-          <li class="settingsChoices" onclick="timeAndLanguage()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> language </span>
             <p>Time & language</p>
           </li>
-          <li class="settingsChoices" onclick="gaming()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> stadia_controller </span>
             <p>Gaming</p>
           </li>
-          <li class="settingsChoices" onclick="accessibility()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> accessibility_new </span>
             <p>Accessbility</p>
           </li>
-          <li class="settingsChoices" onclick="privacyAndSecurity()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> security </span>
             <p>Privacy & security</p>
           </li>
-          <li class="settingsChoices" onclick="windowsUpdate()">
+          <li class="settingsChoices">
             <div class="indicator"></div>
             <span class="material-symbols-outlined"> update </span>
             <p>Windows Update</p>
@@ -100,8 +106,14 @@
       </div>
 
       <div class="settingContents">
-        <p id="title"></p>
-        <div class="systemContainer contents activeContents">
+        <div class="homeContainer contents activeContents">
+          <p id="title">Home</p>
+          <div class="mainContainer">
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+        <div class="systemContainer contents">
+          <p id="title">System</p>
           <div class="mainContainer">
             <div class="header">
               <div class="leftHeader">
@@ -140,51 +152,61 @@
           </div>
         </div>
         <div class="bluetoothContainer contents">
+          <p id="title">Bluetooth & device</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
         </div>
         <div class="networkContainer contents">
+          <p id="title">Network & internet</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
         </div>
         <div class="personalizationContainer contents">
+          <p id="title">Personalization</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
         </div>
         <div class="appsContainer contents">
+          <p id="title">Apps</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
         </div>
         <div class="accountsContainer contents">
+          <p id="title">Accounts</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
         </div>
         <div class="timeContainer contents">
+          <p id="title">Time & language</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
         </div>
         <div class="gamingContainer contents">
+          <p id="title">Gaming</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
         </div>
         <div class="accessibilityContainer contents">
+          <p id="title">Accesibility</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
         </div>
         <div class="privacyContainer contents">
+          <p id="title">Privacy & security</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
         </div>
         <div class="updateContainer contents">
+          <p id="title">Windows Update</p>
           <div class="mainContainer">
             <div class="settingsMainContent"></div>
           </div>
@@ -193,6 +215,8 @@
     </div>
 
     <script src="./src/scripts/main.js"></script>
+    <script src="./src/scripts/toggle.js"></script>
+    <script src="./src/scripts/home.js"></script>
     <script src="./src/scripts/system.js"></script>
     <script src="./src/scripts/bluetoothAndDevices.js"></script>
     <script src="./src/scripts/networkAndInternet.js"></script>

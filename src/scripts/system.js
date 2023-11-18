@@ -1,3 +1,4 @@
+system();
 function system() {
   let listContents = [
     "Display",
@@ -44,8 +45,8 @@ function system() {
   ];
   let settingsMainContent = document.querySelectorAll(".settingsMainContent");
   let container = document.createElement("ul");
-  title.innerText = "System";
-  settingsMainContent[0].append(container);
+  // title.innerText = "System";
+  settingsMainContent[1].append(container);
   container.setAttribute("class", "mainSettingOptionUl");
 
   for (let i = 0; i < listContents.length; i++) {
