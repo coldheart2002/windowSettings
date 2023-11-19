@@ -4,7 +4,6 @@ const contents = document.querySelectorAll(".contents");
 const indicator = document.querySelectorAll(".indicator");
 let title = document.getElementById("title");
 let settingsMainContent = document.querySelectorAll(".settingsMainContent");
-
 //---Initialize
 indicator[0].style.display = "flex";
 
@@ -59,3 +58,24 @@ function pcRename() {
 for (let i = 0; i < renamePc.length; i++) {
   renamePc[i].addEventListener("click", pcRename);
 }
+
+//bluetoothToogle
+let defaultBtnToogle = document.querySelector(".defaultBtnToogle");
+let defaultBtnIndicator = document.querySelector(".defaultBtnIndicator");
+let defaultBtnOff = document.querySelector(".defaultBtnOff");
+let bluetoothDescriptionStatus = document.querySelector(
+  ".bluetoothDescriptionStatus"
+);
+defaultBtnToogle.addEventListener("click", () => {
+  if (defaultBtnOff.classList.contains("defaultBtnOff")) {
+    defaultBtnOff.classList.remove("defaultBtnOff");
+    defaultBtnOff.classList.add("defaultBtnOn");
+    defaultBtnIndicator.innerText = "On";
+    bluetoothDescriptionStatus.innerText = 'Discoverable as "coldHeart"';
+  } else {
+    defaultBtnOff.classList.add("defaultBtnOff");
+    defaultBtnOff.classList.remove("defaultBtnOn");
+    defaultBtnIndicator.innerText = "Off";
+    bluetoothDescriptionStatus.innerText = "Bluetooth is turned off";
+  }
+});

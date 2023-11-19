@@ -1,43 +1,8 @@
-@import "./darkTheme";
-@import "./lightTheme";
-// @import "./icons";
-@mixin flex($direction, $align, $justify) {
-  display: flex;
-  flex-direction: $direction;
-  align-items: $align;
-  justify-content: $justify;
-}
+@import "./themes/darkTheme";
+@import "./themes/lightTheme";
+@import "./themes/goldenTheme";
+@import "./global";
 
-$leftSidebarSize: 300px;
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  box-sizing: border-box;
-  // border: solid 1px;
-  font-size: 1rem;
-  // color: white;
-  // background-color: rgb(50, 50, 50);
-  // color: rgb(50, 50, 50);
-  // background-color: white;
-  scroll-behavior: smooth;
-}
-
-body {
-  transition: all 0.3s ease;
-}
-
-span {
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  // color: black;
-}
-.defaultIcons {
-  height: 30px;
-  margin-right: 2px;
-}
 .contentContainer {
   @include flex(row, center, center);
 
@@ -127,10 +92,9 @@ span {
         position: relative;
         list-style: none;
         padding: 5px;
-        cursor: pointer;
         margin: 5px;
         border-radius: 7px;
-        transition: all 0.3s ease-out;
+        transition: all 0.5s ease-out;
 
         // &:hover {
         //   background-color: rgb(107, 107, 107);
@@ -144,13 +108,14 @@ span {
           top: 50%;
           left: 0;
           display: none;
-          transition: all 0.3s ease-out;
+          transition: all 0.5s ease-out;
         }
         span {
           margin-right: 15px;
           margin-left: 10px;
           font-size: 1.5rem;
           background-color: transparent;
+          cursor: default;
         }
         p {
           flex: 1;
@@ -190,44 +155,43 @@ span {
       overflow: auto;
       .settingsMainContent {
         width: 90%;
-        .mainSettingOptionUl {
-          list-style: none;
-          .mainSettingOptionLi {
-            @include flex(row, center, start);
-            // background-color: rgb(50, 49, 49);
-            position: relative;
-            height: 70px;
-            border: solid 1px;
-            margin: 5px 0;
-            border-radius: 5px;
-            cursor: pointer;
-            // &:hover {
-            //   background-color: rgb(340, 340, 340, 0.5);
-            //   // background-color: red;
-            // }
+        // .mainSettingOptionUl {
+        //   list-style: none;
+        //   .mainSettingOptionLi {
+        //     @include flex(row, center, start);
+        //     // background-color: rgb(50, 49, 49);
+        //     position: relative;
+        //     height: 70px;
+        //     border: solid 1px;
+        //     margin: 5px 0;
+        //     border-radius: 5px;
+        //     // &:hover {
+        //     //   background-color: rgb(340, 340, 340, 0.5);
+        //     //   // background-color: red;
+        //     // }
 
-            .mainSettingIcon {
-              margin: 20px;
-            }
-            .detailContainer {
-              @include flex(column, start, center);
-              line-height: 20px;
-              background-color: transparent;
-              .mainSettingName {
-                background-color: transparent;
-                font-weight: bold;
-              }
-              .mainSettingDescription {
-                background-color: transparent;
-                font-size: 0.8rem;
-              }
-            }
-            .navNext {
-              position: absolute;
-              right: 20px;
-            }
-          }
-        }
+        //     .mainSettingIcon {
+        //       margin: 20px;
+        //     }
+        //     .detailContainer {
+        //       @include flex(column, start, center);
+        //       line-height: 20px;
+        //       background-color: transparent;
+        //       .mainSettingName {
+        //         background-color: transparent;
+        //         font-weight: bold;
+        //       }
+        //       .mainSettingDescription {
+        //         background-color: transparent;
+        //         font-size: 0.8rem;
+        //       }
+        //     }
+        //     .navNext {
+        //       position: absolute;
+        //       right: 20px;
+        //     }
+        //   }
+        // }
       }
     }
 
@@ -262,8 +226,6 @@ span {
                 margin: 13px 0 7px 0;
                 font-size: 1rem;
               }
-              .msIconsContainer {
-              }
             }
             button {
               position: absolute;
@@ -296,8 +258,13 @@ span {
         }
       }
     }
+
+    .header {
+      width: 90%;
+    }
     .systemContainer,
-    .homeContainer {
+    .homeContainer,
+    .networkContainer {
       .header {
         @include flex(row, center, center);
         flex-wrap: wrap;
@@ -305,7 +272,7 @@ span {
         width: 90%;
         .leftHeader {
           @include flex(row, center, center);
-          span {
+          .leftIcon {
             font-size: 80px;
             margin-right: 20px;
           }
@@ -336,13 +303,14 @@ span {
             margin-left: 35px;
             padding: 7px 10px;
             border-radius: 5px;
-            cursor: pointer;
+            cursor: default;
             // &:hover {
             //   background-color: rgb(340, 340, 340, 0.5);
             // }
             span {
               margin-right: 10px;
               font-size: 2rem;
+              cursor: default;
             }
             .info {
               @include flex(column, start, space-between);
@@ -362,12 +330,82 @@ span {
       }
     }
 
-    // .bluetoothContainer {
-    //   // background-color: red;
-    // }
-    // .networkContainer {
-    //   // background-color: orange;
-    // }
+    .bluetoothContainer {
+      .header {
+        // border: solid 1px;
+        margin-bottom: 20px;
+        .addDevice {
+          @include flex(column, center, center);
+          aspect-ratio: 1/1;
+          height: 220px;
+          font-weight: 600;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          border: 1px solid;
+          span {
+            font-size: 90px;
+            font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 200, "opsz" 48;
+          }
+        }
+        .viewMoreDevices {
+          border: solid 1px;
+          padding: 10px 0;
+          border-radius: 5px;
+          text-align: center;
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .networkContainer {
+      .header {
+        margin-bottom: 20px;
+        .leftHeader {
+          .netrworkName {
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+          .networkInfo {
+            @include flex(row, center, center);
+            padding: 3px;
+            .networkInfoIcon {
+              font-size: 1.1rem;
+              margin-right: 2px;
+            }
+            .wifiStatus {
+              font-size: 1rem;
+              text-align: center;
+            }
+          }
+        }
+
+        .rightHeader {
+          .properties {
+            padding: 1px;
+            @include flex(column, start, center);
+            .name {
+              font-weight: 600;
+              margin-bottom: 2.5px;
+            }
+            .details,
+            .additionalDetails {
+              font-size: 0.8rem;
+              margin-bottom: -1px;
+            }
+          }
+          .dataUsage {
+            padding: 7px 0 7px 0;
+            .name {
+              font-weight: 600;
+              margin-bottom: 2.5px;
+            }
+            .details {
+              font-size: 0.8rem;
+              margin-bottom: -1px;
+            }
+          }
+        }
+      }
+    }
     // .personalizationContainer {
     //   // background-color: yellow;
     // }

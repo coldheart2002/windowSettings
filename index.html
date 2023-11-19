@@ -24,7 +24,11 @@
           <button id="switchTheme"><div class="wheel"></div></button>
         </div>
         <div class="accountContainer">
-          <img src="./src/others/profile.jpg" alt="account-profile" class="accProfile"/>
+          <img
+            src="./src/others/profile.jpg"
+            alt="account-profile"
+            class="accProfile"
+          />
           <div class="accDetails">
             <p class="userName">coldHeart</p>
             <p class="accType">Local Account</p>
@@ -115,7 +119,9 @@
           <div class="mainContainer">
             <div class="header">
               <div class="leftHeader">
-                <span class="material-symbols-outlined"> computer </span>
+                <span class="material-symbols-outlined leftIcon">
+                  computer
+                </span>
                 <div class="pcInfo">
                   <div class="pcName">AcerExtensa-NEO</div>
                   <div class="pcBrand">Extensa 215-31</div>
@@ -210,7 +216,9 @@
           <div class="mainContainer">
             <div class="header">
               <div class="leftHeader">
-                <span class="material-symbols-outlined"> computer </span>
+                <span class="material-symbols-outlined leftIcon">
+                  computer
+                </span>
                 <div class="pcInfo">
                   <div class="pcName">AcerExtensa-NEO</div>
                   <div class="pcBrand">Extensa 215-31</div>
@@ -250,6 +258,37 @@
         <div class="bluetoothContainer contents">
           <p id="title">Bluetooth & device</p>
           <div class="mainContainer">
+            <div class="header">
+              <div class="addDevice">
+                <span class="material-symbols-outlined"> add </span>
+                Add device
+              </div>
+              <div class="viewMoreDevices">View more devices</div>
+              <div class="bluetoothStatus">
+                <ul class="mainSettingOptionUl">
+                  <li class="mainSettingOptionLi">
+                    <span class="material-symbols-outlined mainSettingIcon"
+                      >bluetooth</span
+                    >
+                    <div class="detailContainer">
+                      <div>Bluetooth</div>
+                      <div
+                        class="mainSettingDescription bluetoothDescriptionStatus"
+                      >
+                        Bluetooth is turned off
+                      </div>
+                    </div>
+                    <div class="defaultBtn">
+                      <div class="defaultBtnIndicator">Off</div>
+
+                      <button class="defaultBtnToogle navNext">
+                        <div class="defaultBtnWheel defaultBtnOff"></div>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div class="settingsMainContent"></div>
           </div>
         </div>
@@ -259,6 +298,46 @@
         <div class="networkContainer contents">
           <p id="title">Network & internet</p>
           <div class="mainContainer">
+            <div class="header">
+              <div class="leftHeader">
+                <span class="material-symbols-outlined leftIcon">
+                  computer
+                </span>
+                <div class="pcInfo">
+                  <div class="netrworkName">WIFI(PLDThome2002)</div>
+                  <div class="networkInfo">
+                    <span class="material-symbols-outlined networkInfoIcon">
+                      language
+                    </span>
+                    <div class="wifiStatus">Connected, Secured</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rightHeader">
+                <div class="rightHeaderOptions" style="margin-right: 60px">
+                  <span class="material-symbols-outlined"> info </span>
+                  <div class="properties">
+                    <div class="name">Properties</div>
+                    <div class="details">Private network</div>
+                    <div class="additionalDetails">2.4 Ghz</div>
+                  </div>
+                </div>
+                <div class="rightHeaderOptions">
+                  <span class="material-symbols-outlined"> update </span>
+                  <div class="dataUsage">
+                    <div class="name">Data usage</div>
+                    <div class="details">11.47 GB, last 30 days</div>
+                  </div>
+                  <span
+                    class="material-symbols-outlined"
+                    style="margin-right: 0"
+                  >
+                    navigate_next
+                  </span>
+                </div>
+              </div>
+            </div>
             <div class="settingsMainContent"></div>
           </div>
         </div>
