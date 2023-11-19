@@ -3,12 +3,13 @@ const settingsChoices = document.querySelectorAll(".settingsChoices");
 const contents = document.querySelectorAll(".contents");
 const indicator = document.querySelectorAll(".indicator");
 let title = document.getElementById("title");
+let settingsMainContent = document.querySelectorAll(".settingsMainContent");
 
 //---Initialize
 indicator[0].style.display = "flex";
-// system();
-// bluetoothAndDevices();
-// networkAndInternet();
+
+const close = document.querySelector(".close");
+close.style.opacity = 0;
 
 for (let i = 0; i < settingsChoices.length; i++) {
   settingsChoices[i].addEventListener("click", () => {
@@ -28,3 +29,33 @@ for (let i = 0; i < settingsChoices.length; i++) {
   });
 }
 
+let theme = document.getElementById("switchTheme");
+
+theme.addEventListener("click", () => {
+  if (document.body.classList.contains("darkMode")) {
+    document.body.classList.remove("darkMode");
+    document.body.classList.add("lightMode");
+  } else {
+    document.body.classList.remove("lightMode");
+    document.body.classList.add("darkMode");
+  }
+});
+
+let renamePc = document.querySelectorAll(".rename");
+
+function pcRename() {
+  let newPcName = prompt("Enter Name:");
+  let pcName = document.querySelectorAll(".pcName");
+
+  if (!newPcName) {
+    alert("cannot be empty!");
+  } else {
+    for (let i = 0; i < pcName.length; i++) {
+      pcName[i].innerText = newPcName;
+    }
+  }
+}
+
+for (let i = 0; i < renamePc.length; i++) {
+  renamePc[i].addEventListener("click", pcRename);
+}

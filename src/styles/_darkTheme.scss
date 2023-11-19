@@ -11,6 +11,14 @@
     color: white;
   }
 
+  #switchTheme {
+    background-color: rgb(233, 233, 233);
+    .wheel {
+      background-color: rgb(50, 50, 50);
+      transform: translateX(55%);
+    }
+  }
+
   li {
     .indicator {
       background-color: white;
@@ -42,25 +50,12 @@
       background-color: rgb(340, 340, 340, 0.1);
     }
   }
-
-  button {
-    aspect-ratio: 1.5/1;
-    margin-right: 50px;
-    width: 50px;
-    border-radius: 20px;
-    border: solid 1px;
-    position: relative;
-    padding: 1px;
-    background-color: rgb(233, 233, 233);
-    transition: all 0.3s ease-in-out;
-    .wheel {
-      aspect-ratio: 1/1;
-      height: 30px;
-      border-radius: 50%;
-      border: solid 1px;
-      background-color: rgb(50, 50, 50);
-      transform: translateX(55%);
-      transition: all 0.5s ease-in-out;
+  .signIn {
+    background-color: rgb(60, 60, 60);
+    border: solid 1px white;
+    color: white;
+    &:hover {
+      background-color: rgb(340, 340, 340, 0.1);
     }
   }
 }

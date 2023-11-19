@@ -1,5 +1,6 @@
 @import "./darkTheme";
 @import "./lightTheme";
+// @import "./icons";
 @mixin flex($direction, $align, $justify) {
   display: flex;
   flex-direction: $direction;
@@ -33,6 +34,10 @@ span {
   color: white;
   // color: black;
 }
+.defaultIcons {
+  height: 30px;
+  margin-right: 2px;
+}
 .contentContainer {
   @include flex(row, center, center);
 
@@ -49,15 +54,33 @@ span {
       p {
         flex: 1;
       }
-      button {
+      #switchTheme {
         cursor: pointer;
+        aspect-ratio: 1.5/1;
+        margin-right: 50px;
+        width: 50px;
+        border-radius: 20px;
+        border: solid 1px;
+        position: relative;
+        padding: 1px;
+        transition: all 0.3s ease-in-out;
+        .wheel {
+          aspect-ratio: 1/1;
+          height: 30px;
+          border-radius: 50%;
+          border: solid 1px;
+          transition: all 0.5s ease-in-out;
+        }
       }
     }
     .accountContainer {
       @include flex(row, center, center);
       // border: solid 1px;
-      span {
-        font-size: 60px;
+      .accProfile {
+        height: 70px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: solid 1px;
         margin: 5px 10px 10px 0;
       }
       .accDetails {
@@ -125,7 +148,7 @@ span {
         }
         span {
           margin-right: 15px;
-          margin-left: 15px;
+          margin-left: 10px;
           font-size: 1.5rem;
           background-color: transparent;
         }
@@ -216,24 +239,55 @@ span {
         }
         .leftContent {
           flex: 1;
-          padding-right: 3px;
+          padding-right: 4px;
           .microsoft {
+            @include flex(row, center, center);
+            position: relative;
             border: solid 1px;
             height: 270px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+
+            .mslogo {
+              position: absolute;
+              top: 13px;
+              left: 20px;
+              height: 25px;
+            }
+            .leftContentContents {
+              padding: 0 20px;
+              .microsoftTitle {
+                font-size: 1.5rem;
+              }
+              .microsoftDescription {
+                margin: 13px 0 7px 0;
+                font-size: 1rem;
+              }
+              .msIconsContainer {
+              }
+            }
+            button {
+              position: absolute;
+              bottom: 13px;
+              left: 20px;
+              border-radius: 5px;
+              width: 100px;
+              height: 30px;
+              cursor: pointer;
+            }
           }
+
           .devices {
             border: solid 1px;
             height: 220px;
           }
         }
         .rightContent {
-          padding-left: 3px;
+          padding-left: 4px;
           flex: 1;
           .recommendation {
             border: solid 1px;
             height: 300px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
           }
           .personalize {
             border: solid 1px;
@@ -266,6 +320,10 @@ span {
             }
             .rename {
               font-size: 0.8rem;
+              cursor: pointer;
+              &:hover {
+                opacity: 0.7;
+              }
             }
           }
         }
@@ -304,32 +362,32 @@ span {
       }
     }
 
-    .bluetoothContainer {
-      // background-color: red;
-    }
-    .networkContainer {
-      // background-color: orange;
-    }
-    .personalizationContainer {
-      // background-color: yellow;
-    }
-    .appsContainer {
-      // background-color: green;
-    }
-    .accountsContainer {
-      // background-color: blue;
-    }
-    .timeContainer {
-      // background-color: violet;
-    }
-    .gamingContainer {
-      // background-color: gray;
-    }
-    .accessibilityContainer {
-    }
-    .privacyContainer {
-    }
-    .updateContainer {
-    }
+    // .bluetoothContainer {
+    //   // background-color: red;
+    // }
+    // .networkContainer {
+    //   // background-color: orange;
+    // }
+    // .personalizationContainer {
+    //   // background-color: yellow;
+    // }
+    // .appsContainer {
+    //   // background-color: green;
+    // }
+    // .accountsContainer {
+    //   // background-color: blue;
+    // }
+    // .timeContainer {
+    //   // background-color: violet;
+    // }
+    // .gamingContainer {
+    //   // background-color: gray;
+    // }
+    // .accessibilityContainer {
+    // }
+    // .privacyContainer {
+    // }
+    // .updateContainer {
+    // }
   }
 }

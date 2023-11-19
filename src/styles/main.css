@@ -9,6 +9,13 @@
 .darkMode span {
   color: white;
 }
+.darkMode #switchTheme {
+  background-color: rgb(233, 233, 233);
+}
+.darkMode #switchTheme .wheel {
+  background-color: rgb(50, 50, 50);
+  transform: translateX(55%);
+}
 .darkMode li .indicator {
   background-color: white;
 }
@@ -33,25 +40,13 @@
 .darkMode .mainSettingOptionLi:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.darkMode button {
-  aspect-ratio: 1.5/1;
-  margin-right: 50px;
-  width: 50px;
-  border-radius: 20px;
-  border: solid 1px;
-  position: relative;
-  padding: 1px;
-  background-color: rgb(233, 233, 233);
-  transition: all 0.3s ease-in-out;
+.darkMode .signIn {
+  background-color: rgb(60, 60, 60);
+  border: solid 1px white;
+  color: white;
 }
-.darkMode button .wheel {
-  aspect-ratio: 1/1;
-  height: 30px;
-  border-radius: 50%;
-  border: solid 1px;
-  background-color: rgb(50, 50, 50);
-  transform: translateX(55%);
-  transition: all 0.5s ease-in-out;
+.darkMode .signIn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .lightMode {
@@ -63,6 +58,13 @@
 }
 .lightMode span {
   color: rgb(50, 50, 50);
+}
+.lightMode #switchTheme {
+  background-color: rgb(50, 50, 50);
+}
+.lightMode #switchTheme .wheel {
+  background-color: rgb(233, 233, 233);
+  transition: all 0.5s ease-in-out;
 }
 .lightMode li .indicator {
   background-color: black;
@@ -88,24 +90,13 @@
 .lightMode .mainSettingOptionLi:hover {
   background-color: rgba(210, 210, 210, 0.3);
 }
-.lightMode button {
-  aspect-ratio: 1.5/1;
-  margin-right: 50px;
-  width: 50px;
-  border-radius: 20px;
-  border: solid 1px;
-  position: relative;
-  padding: 1px;
-  background-color: rgb(50, 50, 50);
-  transition: all 0.3s ease-in-out;
+.lightMode .signIn {
+  background-color: white;
+  border: solid 1px black;
+  color: black;
 }
-.lightMode button .wheel {
-  aspect-ratio: 1/1;
-  height: 30px;
-  border-radius: 50%;
-  border: solid 1px;
-  background-color: rgb(233, 233, 233);
-  transition: all 0.5s ease-in-out;
+.lightMode .signIn:hover {
+  background-color: rgba(210, 210, 210, 0.3);
 }
 
 * {
@@ -125,6 +116,11 @@ span {
   cursor: pointer;
   background-color: transparent;
   color: white;
+}
+
+.defaultIcons {
+  height: 30px;
+  margin-right: 2px;
 }
 
 .contentContainer {
@@ -150,8 +146,23 @@ span {
 .contentContainer .leftSidebar .heading p {
   flex: 1;
 }
-.contentContainer .leftSidebar .heading button {
+.contentContainer .leftSidebar .heading #switchTheme {
   cursor: pointer;
+  aspect-ratio: 1.5/1;
+  margin-right: 50px;
+  width: 50px;
+  border-radius: 20px;
+  border: solid 1px;
+  position: relative;
+  padding: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.contentContainer .leftSidebar .heading #switchTheme .wheel {
+  aspect-ratio: 1/1;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px;
+  transition: all 0.5s ease-in-out;
 }
 .contentContainer .leftSidebar .accountContainer {
   display: flex;
@@ -159,8 +170,11 @@ span {
   align-items: center;
   justify-content: center;
 }
-.contentContainer .leftSidebar .accountContainer span {
-  font-size: 60px;
+.contentContainer .leftSidebar .accountContainer .accProfile {
+  height: 70px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: solid 1px;
   margin: 5px 10px 10px 0;
 }
 .contentContainer .leftSidebar .accountContainer .accDetails {
@@ -221,7 +235,7 @@ span {
 }
 .contentContainer .leftSidebar ul li span {
   margin-right: 15px;
-  margin-left: 15px;
+  margin-left: 10px;
   font-size: 1.5rem;
   background-color: transparent;
 }
@@ -310,25 +324,55 @@ span {
 }
 .contentContainer .settingContents .homeContainer .settingsMainContent .leftContent {
   flex: 1;
-  padding-right: 3px;
+  padding-right: 4px;
 }
 .contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   border: solid 1px;
   height: 270px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft .mslogo {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  height: 25px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft .leftContentContents {
+  padding: 0 20px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft .leftContentContents .microsoftTitle {
+  font-size: 1.5rem;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft .leftContentContents .microsoftDescription {
+  margin: 13px 0 7px 0;
+  font-size: 1rem;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft button {
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
 }
 .contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .devices {
   border: solid 1px;
   height: 220px;
 }
 .contentContainer .settingContents .homeContainer .settingsMainContent .rightContent {
-  padding-left: 3px;
+  padding-left: 4px;
   flex: 1;
 }
 .contentContainer .settingContents .homeContainer .settingsMainContent .rightContent .recommendation {
   border: solid 1px;
   height: 300px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .contentContainer .settingContents .homeContainer .settingsMainContent .rightContent .personalize {
   border: solid 1px;
@@ -375,6 +419,11 @@ span {
 .contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .rename,
 .contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo .rename {
   font-size: 0.8rem;
+  cursor: pointer;
+}
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .rename:hover,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo .rename:hover {
+  opacity: 0.7;
 }
 .contentContainer .settingContents .systemContainer .header .rightHeader,
 .contentContainer .settingContents .homeContainer .header .rightHeader {
