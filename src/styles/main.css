@@ -1,0 +1,897 @@
+.darkTheme {
+  color: white;
+  background-color: rgb(50, 50, 50);
+}
+.darkTheme .theme2 {
+  background-color: rgb(100, 100, 100);
+}
+.darkTheme input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.darkTheme span {
+  color: white;
+}
+.darkTheme #switchTheme {
+  background-color: rgb(233, 233, 233);
+}
+.darkTheme #switchTheme .wheel {
+  background-color: rgb(50, 50, 50);
+  transform: translateX(55%);
+}
+.darkTheme li .indicator {
+  background-color: white;
+}
+.darkTheme li:hover {
+  background-color: rgb(100, 100, 100);
+}
+.darkTheme .liActive {
+  background-color: rgb(100, 100, 100);
+}
+.darkTheme .rightHeaderOptions:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.darkTheme .microsoft,
+.darkTheme .devices,
+.darkTheme .recommendation,
+.darkTheme .personalize {
+  background-color: rgb(60, 60, 60);
+}
+.darkTheme .mainSettingOptionLi,
+.darkTheme .addDevice,
+.darkTheme .viewMoreDevices {
+  background-color: rgb(60, 60, 60);
+}
+.darkTheme .mainSettingOptionLi:hover,
+.darkTheme .addDevice:hover,
+.darkTheme .viewMoreDevices:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.darkTheme .signIn {
+  background-color: rgb(60, 60, 60);
+  border: solid 1px white;
+  color: white;
+}
+.darkTheme .signIn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lightTheme {
+  color: rgb(50, 50, 50);
+  background-color: rgb(233, 233, 233);
+}
+.lightTheme .theme2 {
+  background-color: rgb(210, 210, 210);
+}
+.lightTheme input {
+  background-color: rgba(210, 210, 210, 0.3);
+}
+.lightTheme span {
+  color: rgb(50, 50, 50);
+}
+.lightTheme #switchTheme {
+  background-color: rgb(50, 50, 50);
+}
+.lightTheme #switchTheme .wheel {
+  background-color: rgb(233, 233, 233);
+  transition: all 0.5s ease-in-out;
+}
+.lightTheme li .indicator {
+  background-color: black;
+}
+.lightTheme li:hover {
+  background-color: rgb(210, 210, 210);
+}
+.lightTheme .liActive {
+  background-color: rgb(210, 210, 210);
+}
+.lightTheme .rightHeaderOptions:hover {
+  background-color: rgba(210, 210, 210, 0.3);
+}
+.lightTheme .microsoft,
+.lightTheme .devices,
+.lightTheme .recommendation,
+.lightTheme .personalize {
+  background-color: white;
+}
+.lightTheme .mainSettingOptionLi,
+.lightTheme .addDevice,
+.lightTheme .viewMoreDevices {
+  background-color: white;
+}
+.lightTheme .mainSettingOptionLi:hover,
+.lightTheme .addDevice:hover,
+.lightTheme .viewMoreDevices:hover {
+  background-color: rgba(210, 210, 210, 0.3);
+}
+.lightTheme .signIn {
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+}
+.lightTheme .signIn:hover {
+  background-color: rgba(210, 210, 210, 0.3);
+}
+
+.rubyTheme {
+  color: black;
+  background-color: rgb(240, 128, 128);
+}
+.rubyTheme .theme2 {
+  background-color: rgba(220, 20, 60, 0.5);
+}
+.rubyTheme input {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.rubyTheme span {
+  color: black;
+}
+.rubyTheme #switchTheme {
+  background-color: rgb(139, 0, 0);
+}
+.rubyTheme #switchTheme .wheel {
+  background-color: rgb(220, 20, 60);
+  transform: translateX(55%);
+}
+.rubyTheme li .indicator {
+  background-color: black;
+}
+.rubyTheme li:hover {
+  background-color: rgba(220, 20, 60, 0.5);
+}
+.rubyTheme .liActive {
+  background-color: rgba(220, 20, 60, 0.5);
+}
+.rubyTheme .rightHeaderOptions:hover {
+  background-color: rgba(220, 20, 60, 0.5);
+}
+.rubyTheme .microsoft,
+.rubyTheme .devices,
+.rubyTheme .recommendation,
+.rubyTheme .personalize {
+  background-color: rgb(178, 34, 34);
+}
+.rubyTheme .mainSettingOptionLi,
+.rubyTheme .addDevice,
+.rubyTheme .viewMoreDevices {
+  background-color: rgb(178, 34, 34);
+}
+.rubyTheme .mainSettingOptionLi:hover,
+.rubyTheme .addDevice:hover,
+.rubyTheme .viewMoreDevices:hover {
+  background-color: rgba(220, 20, 60, 0.5);
+}
+.rubyTheme .signIn {
+  background-color: rgb(178, 34, 34);
+  border: solid 1px black;
+  color: black;
+}
+.rubyTheme .signIn:hover {
+  background-color: rgba(220, 20, 60, 0.5);
+}
+
+.natureTheme {
+  color: rgb(50, 50, 50);
+  background-color: rgb(233, 233, 233);
+}
+.natureTheme .theme2 {
+  background-color: rgba(144, 238, 144, 0.5);
+}
+.natureTheme input {
+  background-color: rgba(144, 238, 144, 0.3);
+}
+.natureTheme span {
+  color: rgb(50, 50, 50);
+}
+.natureTheme #switchTheme {
+  background-color: rgb(50, 50, 50);
+}
+.natureTheme #switchTheme .wheel {
+  background-color: rgb(233, 233, 233);
+  transition: all 0.5s ease-in-out;
+}
+.natureTheme li .indicator {
+  background-color: black;
+}
+.natureTheme li:hover {
+  background-color: rgba(144, 238, 144, 0.5);
+}
+.natureTheme .liActive {
+  background-color: rgba(144, 238, 144, 0.5);
+}
+.natureTheme .rightHeaderOptions:hover {
+  background-color: rgba(144, 238, 144, 0.3);
+}
+.natureTheme .microsoft,
+.natureTheme .devices,
+.natureTheme .recommendation,
+.natureTheme .personalize {
+  background-color: white;
+}
+.natureTheme .mainSettingOptionLi,
+.natureTheme .addDevice,
+.natureTheme .viewMoreDevices {
+  background-color: white;
+}
+.natureTheme .mainSettingOptionLi:hover,
+.natureTheme .addDevice:hover,
+.natureTheme .viewMoreDevices:hover {
+  background-color: rgba(144, 238, 144, 0.3);
+}
+.natureTheme .signIn {
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+}
+.natureTheme .signIn:hover {
+  background-color: rgba(144, 238, 144, 0.3);
+}
+
+.amberTheme {
+  color: black;
+  background-color: rgb(255, 236, 179);
+}
+.amberTheme .theme2 {
+  background-color: rgba(255, 191, 0, 0.5);
+}
+.amberTheme input {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.amberTheme span {
+  color: black;
+}
+.amberTheme #switchTheme {
+  background-color: rgb(191, 127, 0);
+}
+.amberTheme #switchTheme .wheel {
+  background-color: rgb(255, 191, 0);
+  transform: translateX(55%);
+}
+.amberTheme li .indicator {
+  background-color: black;
+}
+.amberTheme li:hover {
+  background-color: rgba(255, 191, 0, 0.5);
+}
+.amberTheme .liActive {
+  background-color: rgba(255, 191, 0, 0.5);
+}
+.amberTheme .rightHeaderOptions:hover {
+  background-color: rgba(255, 191, 0, 0.5);
+}
+.amberTheme .microsoft,
+.amberTheme .devices,
+.amberTheme .recommendation,
+.amberTheme .personalize {
+  background-color: rgb(230, 153, 0);
+}
+.amberTheme .mainSettingOptionLi,
+.amberTheme .addDevice,
+.amberTheme .viewMoreDevices {
+  background-color: rgb(230, 153, 0);
+}
+.amberTheme .mainSettingOptionLi:hover,
+.amberTheme .addDevice:hover,
+.amberTheme .viewMoreDevices:hover {
+  background-color: rgba(255, 191, 0, 0.5);
+}
+.amberTheme .signIn {
+  background-color: rgb(230, 153, 0);
+  border: solid 1px black;
+  color: black;
+}
+.amberTheme .signIn:hover {
+  background-color: rgba(255, 191, 0, 0.5);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 250, "GRAD" 200, "opsz" 48;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+span {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+.defaultIcons {
+  height: 30px;
+  margin-right: 2px;
+}
+
+.mainSettingOptionUl {
+  list-style: none;
+}
+.mainSettingOptionUl .mainSettingOptionLi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  height: 70px;
+  border: solid 1px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.mainSettingOptionUl .mainSettingOptionLi .mainSettingIcon {
+  margin: 20px;
+}
+.mainSettingOptionUl .mainSettingOptionLi .detailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  line-height: 20px;
+  background-color: transparent;
+}
+.mainSettingOptionUl .mainSettingOptionLi .detailContainer .mainSettingName {
+  background-color: transparent;
+  font-weight: bold;
+}
+.mainSettingOptionUl .mainSettingOptionLi .detailContainer .mainSettingDescription {
+  background-color: transparent;
+  font-size: 0.8rem;
+}
+.mainSettingOptionUl .mainSettingOptionLi .navNext {
+  position: absolute;
+  right: 20px;
+}
+
+.defaultBtn .defaultBtnIndicator {
+  position: absolute;
+  right: 75px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.defaultBtn .defaultBtnToogle {
+  aspect-ratio: 1.6/1;
+  height: 25px;
+  border-radius: 20px;
+  border: solid 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: lightgray;
+}
+.defaultBtn .defaultBtnToogle .defaultBtnWheel {
+  aspect-ratio: 1/1;
+  height: 15px;
+  margin-left: 3px;
+  border-radius: 50%;
+  transition: ease-in 0.3s;
+  border: solid 1px;
+}
+.defaultBtn .defaultBtnToogle .defaultBtnOff {
+  background-color: white;
+}
+.defaultBtn .defaultBtnToogle .defaultBtnOn {
+  transform: translateX(17px);
+  background-color: black;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contentContainer .leftSidebar {
+  width: 300px;
+  height: 100vh;
+  padding-left: 15px;
+}
+.contentContainer .leftSidebar .heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contentContainer .leftSidebar .heading span {
+  margin: 15px 10px 10px 0;
+}
+.contentContainer .leftSidebar .heading p {
+  flex: 1;
+}
+.contentContainer .leftSidebar .heading #switchTheme {
+  cursor: pointer;
+  aspect-ratio: 1.5/1;
+  margin-right: 50px;
+  width: 50px;
+  border-radius: 20px;
+  border: solid 1px;
+  position: relative;
+  padding: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.contentContainer .leftSidebar .heading #switchTheme .wheel {
+  aspect-ratio: 1/1;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px;
+  transition: all 0.5s ease-in-out;
+}
+.contentContainer .leftSidebar .accountContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contentContainer .leftSidebar .accountContainer .accProfile {
+  height: 70px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: solid 1px;
+  margin: 5px 10px 10px 0;
+}
+.contentContainer .leftSidebar .accountContainer .accDetails {
+  flex: 1;
+}
+.contentContainer .leftSidebar .accountContainer .accDetails p {
+  line-height: 20px;
+}
+.contentContainer .leftSidebar .accountContainer .accDetails p .userName {
+  font-weight: bold;
+}
+.contentContainer .leftSidebar .searchContainer {
+  position: relative;
+  margin-bottom: 15px;
+}
+.contentContainer .leftSidebar .searchContainer input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border-bottom: solid 1px;
+}
+.contentContainer .leftSidebar .searchContainer span {
+  position: absolute;
+  transform: translateY(-50%);
+}
+.contentContainer .leftSidebar .searchContainer .close {
+  right: 50px;
+  top: 50%;
+}
+.contentContainer .leftSidebar .searchContainer .search {
+  right: 10px;
+  top: 50%;
+}
+.contentContainer .leftSidebar ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 7px;
+  transition: all 0.5s ease-out;
+}
+.contentContainer .leftSidebar ul li .indicator {
+  position: absolute;
+  border-radius: 5px;
+  width: 4px;
+  height: 15px;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  display: none;
+  transition: all 0.5s ease-out;
+}
+.contentContainer .leftSidebar ul li span {
+  margin-right: 15px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  cursor: default;
+}
+.contentContainer .leftSidebar ul li p {
+  flex: 1;
+  background-color: transparent;
+}
+.contentContainer .settingContents {
+  height: 100vh;
+  flex: 1;
+  z-index: 10;
+  position: relative;
+}
+.contentContainer .settingContents p {
+  position: absolute;
+  background-color: transparent;
+  top: 50px;
+  left: 120px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contentContainer .settingContents .contents {
+  display: none;
+  width: 90%;
+  margin-left: 10%;
+  padding-top: 100px;
+}
+.contentContainer .settingContents .activeContents {
+  height: 100vh;
+  flex: 1;
+  display: block;
+}
+.contentContainer .settingContents .mainContainer {
+  height: 585px;
+  overflow: auto;
+}
+.contentContainer .settingContents .mainContainer .settingsMainContent {
+  width: 90%;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent div {
+  border-radius: 7px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent {
+  flex: 1;
+  padding-right: 4px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: solid 1px;
+  height: 270px;
+  margin-bottom: 8px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft .mslogo {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  height: 25px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft .leftContentContents {
+  padding: 0 20px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft .leftContentContents .microsoftTitle {
+  font-size: 1.5rem;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft .leftContentContents .microsoftDescription {
+  margin: 13px 0 7px 0;
+  font-size: 1rem;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .microsoft button {
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .leftContent .devices {
+  border: solid 1px;
+  height: 220px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .rightContent {
+  padding-left: 4px;
+  flex: 1;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .rightContent .recommendation {
+  border: solid 1px;
+  height: 300px;
+  margin-bottom: 8px;
+}
+.contentContainer .settingContents .homeContainer .settingsMainContent .rightContent .personalize {
+  border: solid 1px;
+  height: 320px;
+}
+.contentContainer .settingContents .header {
+  width: 90%;
+}
+.contentContainer .settingContents .systemContainer .header,
+.contentContainer .settingContents .homeContainer .header,
+.contentContainer .settingContents .networkContainer .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 90%;
+}
+.contentContainer .settingContents .systemContainer .header .leftHeader,
+.contentContainer .settingContents .homeContainer .header .leftHeader,
+.contentContainer .settingContents .networkContainer .header .leftHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contentContainer .settingContents .systemContainer .header .leftHeader .leftIcon,
+.contentContainer .settingContents .homeContainer .header .leftHeader .leftIcon,
+.contentContainer .settingContents .networkContainer .header .leftHeader .leftIcon {
+  font-size: 80px;
+  margin-right: 20px;
+}
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo,
+.contentContainer .settingContents .networkContainer .header .leftHeader .pcInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 60px;
+}
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .pcName,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo .pcName,
+.contentContainer .settingContents .networkContainer .header .leftHeader .pcInfo .pcName {
+  font-weight: bold;
+}
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .pcBrand,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo .pcBrand,
+.contentContainer .settingContents .networkContainer .header .leftHeader .pcInfo .pcBrand {
+  font-size: 0.8rem;
+}
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .rename,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo .rename,
+.contentContainer .settingContents .networkContainer .header .leftHeader .pcInfo .rename {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.contentContainer .settingContents .systemContainer .header .leftHeader .pcInfo .rename:hover,
+.contentContainer .settingContents .homeContainer .header .leftHeader .pcInfo .rename:hover,
+.contentContainer .settingContents .networkContainer .header .leftHeader .pcInfo .rename:hover {
+  opacity: 0.7;
+}
+.contentContainer .settingContents .systemContainer .header .rightHeader,
+.contentContainer .settingContents .homeContainer .header .rightHeader,
+.contentContainer .settingContents .networkContainer .header .rightHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions,
+.contentContainer .settingContents .networkContainer .header .rightHeader .rightHeaderOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: default;
+}
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions span,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions span,
+.contentContainer .settingContents .networkContainer .header .rightHeader .rightHeaderOptions span {
+  margin-right: 10px;
+  font-size: 2rem;
+  cursor: default;
+}
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions .info,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions .info,
+.contentContainer .settingContents .networkContainer .header .rightHeader .rightHeaderOptions .info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 40px;
+  background-color: transparent;
+}
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions .info .name,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions .info .name,
+.contentContainer .settingContents .networkContainer .header .rightHeader .rightHeaderOptions .info .name {
+  font-weight: bold;
+  background-color: transparent;
+}
+.contentContainer .settingContents .systemContainer .header .rightHeader .rightHeaderOptions .info .details,
+.contentContainer .settingContents .homeContainer .header .rightHeader .rightHeaderOptions .info .details,
+.contentContainer .settingContents .networkContainer .header .rightHeader .rightHeaderOptions .info .details {
+  font-size: 0.8rem;
+  background-color: transparent;
+}
+.contentContainer .settingContents .bluetoothContainer .header {
+  margin-bottom: 20px;
+}
+.contentContainer .settingContents .bluetoothContainer .header .addDevice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  height: 220px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid;
+}
+.contentContainer .settingContents .bluetoothContainer .header .addDevice span {
+  font-size: 90px;
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 200, "opsz" 48;
+}
+.contentContainer .settingContents .bluetoothContainer .header .viewMoreDevices {
+  border: solid 1px;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.contentContainer .settingContents .networkContainer .header {
+  margin-bottom: 20px;
+}
+.contentContainer .settingContents .networkContainer .header .leftHeader .netrworkName {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contentContainer .settingContents .networkContainer .header .leftHeader .networkInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+.contentContainer .settingContents .networkContainer .header .leftHeader .networkInfo .networkInfoIcon {
+  font-size: 1.1rem;
+  margin-right: 2px;
+}
+.contentContainer .settingContents .networkContainer .header .leftHeader .networkInfo .wifiStatus {
+  font-size: 1rem;
+  text-align: center;
+}
+.contentContainer .settingContents .networkContainer .header .rightHeader .properties {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.contentContainer .settingContents .networkContainer .header .rightHeader .properties .name {
+  font-weight: 600;
+  margin-bottom: 2.5px;
+}
+.contentContainer .settingContents .networkContainer .header .rightHeader .properties .details,
+.contentContainer .settingContents .networkContainer .header .rightHeader .properties .additionalDetails {
+  font-size: 0.8rem;
+  margin-bottom: -1px;
+}
+.contentContainer .settingContents .networkContainer .header .rightHeader .dataUsage {
+  padding: 7px 0 7px 0;
+}
+.contentContainer .settingContents .networkContainer .header .rightHeader .dataUsage .name {
+  font-weight: 600;
+  margin-bottom: 2.5px;
+}
+.contentContainer .settingContents .networkContainer .header .rightHeader .dataUsage .details {
+  font-size: 0.8rem;
+  margin-bottom: -1px;
+}
+.contentContainer .settingContents .personalizationContainer .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+  gap: 40px;
+}
+.contentContainer .settingContents .personalizationContainer .header .currentTheme {
+  height: 180px;
+  width: 300px;
+  border: solid 5px;
+  border-radius: 10px;
+  position: relative;
+}
+.contentContainer .settingContents .personalizationContainer .header .currentTheme .currentTheme2 {
+  position: absolute;
+  aspect-ratio: 1.2/1;
+  height: 90px;
+  border: solid 1px;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 5px;
+}
+.contentContainer .settingContents .personalizationContainer .header .otherTheme .description {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.contentContainer .settingContents .personalizationContainer .header .otherTheme .themeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 500px;
+  gap: 10px;
+}
+.contentContainer .settingContents .personalizationContainer .header .otherTheme .themeContainer .theme {
+  height: 100px;
+  width: 135px;
+  border: solid 1px;
+  position: relative;
+  border-radius: 7px;
+}
+.contentContainer .settingContents .personalizationContainer .header .otherTheme .themeContainer .theme .theme2 {
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  border: solid 1px;
+  height: 50px;
+  border-radius: 5px;
+  aspect-ratio: 1.2/1;
+}
+.contentContainer .settingContents .personalizationContainer .header .otherTheme .themeContainer .activeTheme {
+  transform: scale(1.12);
+  border: solid 3px;
+}
+.contentContainer .settingContents .hiddenItems .renameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display: none;
+  border: solid 1px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.contentContainer .settingContents .hiddenItems .renameContainer .newPcNameInput {
+  padding: 10px 20px 10px 20px;
+  font-size: 1rem;
+  border: solid 1px;
+  border-radius: 20px;
+  outline: none;
+}
+.contentContainer .settingContents .hiddenItems .renameContainer .renameContainerBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+.contentContainer .settingContents .hiddenItems .renameContainer .renameContainerBtns button {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: black;
+  border-radius: 20px;
+  border: solid 1px;
+  font-weight: 600;
+}
+.contentContainer .settingContents .hiddenItems .renameContainer .renameContainerBtns button:hover {
+  opacity: 0.8;
+  background-color: lightgray;
+}
+.contentContainer .settingContents .hiddenItems .renameContainer .renameContainerBtns button:active {
+  opacity: 0.5;
+}
+.contentContainer .settingContents .hiddenItems .renameContainer .renameContainerBtns .confirmNewPcName {
+  background-color: blue;
+  border: none;
+  color: white;
+}
+.contentContainer .settingContents .hiddenItems .renameContainer .renameContainerBtns .confirmNewPcName:hover {
+  background-color: blue;
+}/*# sourceMappingURL=main.css.map */

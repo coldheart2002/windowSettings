@@ -1,0 +1,535 @@
+@import "./themes/darkTheme";
+@import "./themes/lightTheme";
+@import "./themes/rubyTheme";
+@import "./themes/natureTheme";
+@import "./themes/amberTheme";
+@import "./global";
+
+.contentContainer {
+  @include flex(row, center, center);
+
+  .leftSidebar {
+    width: $leftSidebarSize;
+    height: 100vh;
+    padding-left: 15px;
+    .heading {
+      @include flex(row, center, center);
+      // border: solid 1px;
+      span {
+        margin: 15px 10px 10px 0;
+      }
+      p {
+        flex: 1;
+      }
+      #switchTheme {
+        cursor: pointer;
+        aspect-ratio: 1.5/1;
+        margin-right: 50px;
+        width: 50px;
+        border-radius: 20px;
+        border: solid 1px;
+        position: relative;
+        padding: 1px;
+        transition: all 0.3s ease-in-out;
+        .wheel {
+          aspect-ratio: 1/1;
+          height: 30px;
+          border-radius: 50%;
+          border: solid 1px;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+    .accountContainer {
+      @include flex(row, center, center);
+      // border: solid 1px;
+      .accProfile {
+        height: 70px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: solid 1px;
+        margin: 5px 10px 10px 0;
+      }
+      .accDetails {
+        flex: 1;
+        p {
+          .userName {
+            font-weight: bold;
+          }
+          line-height: 20px;
+        }
+      }
+    }
+    .searchContainer {
+      position: relative;
+      margin-bottom: 15px;
+      input {
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        outline: none;
+        border-bottom: solid 1px;
+      }
+      span {
+        position: absolute;
+        transform: translateY(-50%);
+      }
+
+      .close {
+        right: 50px;
+        top: 50%;
+      }
+      .search {
+        right: 10px;
+        top: 50%;
+      }
+    }
+
+    ul {
+      // .liActive {
+      //   background-color: rgb(107, 107, 107);
+      // }
+      li {
+        @include flex(row, center, center);
+        position: relative;
+        list-style: none;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 7px;
+        transition: all 0.5s ease-out;
+
+        // &:hover {
+        //   background-color: rgb(107, 107, 107);
+        // }
+        .indicator {
+          position: absolute;
+          border-radius: 5px;
+          width: 4px;
+          height: 15px;
+          transform: translateY(-50%);
+          top: 50%;
+          left: 0;
+          display: none;
+          transition: all 0.5s ease-out;
+        }
+        span {
+          margin-right: 15px;
+          margin-left: 10px;
+          font-size: 1.5rem;
+          background-color: transparent;
+          cursor: default;
+        }
+        p {
+          flex: 1;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .settingContents {
+    height: 100vh;
+    flex: 1;
+    z-index: 10;
+    position: relative;
+    p {
+      position: absolute;
+      background-color: transparent;
+      top: 50px;
+      left: 120px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .contents {
+      display: none;
+      width: 90%;
+      margin-left: 10%;
+      padding-top: 100px;
+    }
+    .activeContents {
+      height: 100vh;
+      flex: 1;
+      display: block;
+    }
+    .mainContainer {
+      height: 585px;
+      // width: 1000px;
+      overflow: auto;
+      .settingsMainContent {
+        width: 90%;
+        // .mainSettingOptionUl {
+        //   list-style: none;
+        //   .mainSettingOptionLi {
+        //     @include flex(row, center, start);
+        //     // background-color: rgb(50, 49, 49);
+        //     position: relative;
+        //     height: 70px;
+        //     border: solid 1px;
+        //     margin: 5px 0;
+        //     border-radius: 5px;
+        //     // &:hover {
+        //     //   background-color: rgb(340, 340, 340, 0.5);
+        //     //   // background-color: red;
+        //     // }
+
+        //     .mainSettingIcon {
+        //       margin: 20px;
+        //     }
+        //     .detailContainer {
+        //       @include flex(column, start, center);
+        //       line-height: 20px;
+        //       background-color: transparent;
+        //       .mainSettingName {
+        //         background-color: transparent;
+        //         font-weight: bold;
+        //       }
+        //       .mainSettingDescription {
+        //         background-color: transparent;
+        //         font-size: 0.8rem;
+        //       }
+        //     }
+        //     .navNext {
+        //       position: absolute;
+        //       right: 20px;
+        //     }
+        //   }
+        // }
+      }
+    }
+
+    .homeContainer {
+      .settingsMainContent {
+        @include flex(row, start, center);
+        div {
+          border-radius: 7px;
+        }
+        .leftContent {
+          flex: 1;
+          padding-right: 4px;
+          .microsoft {
+            @include flex(row, center, center);
+            position: relative;
+            border: solid 1px;
+            height: 270px;
+            margin-bottom: 8px;
+
+            .mslogo {
+              position: absolute;
+              top: 13px;
+              left: 20px;
+              height: 25px;
+            }
+            .leftContentContents {
+              padding: 0 20px;
+              .microsoftTitle {
+                font-size: 1.5rem;
+              }
+              .microsoftDescription {
+                margin: 13px 0 7px 0;
+                font-size: 1rem;
+              }
+            }
+            button {
+              position: absolute;
+              bottom: 13px;
+              left: 20px;
+              border-radius: 5px;
+              width: 100px;
+              height: 30px;
+              cursor: pointer;
+            }
+          }
+
+          .devices {
+            border: solid 1px;
+            height: 220px;
+          }
+        }
+        .rightContent {
+          padding-left: 4px;
+          flex: 1;
+          .recommendation {
+            border: solid 1px;
+            height: 300px;
+            margin-bottom: 8px;
+          }
+          .personalize {
+            border: solid 1px;
+            height: 320px;
+          }
+        }
+      }
+    }
+
+    .header {
+      width: 90%;
+    }
+    .systemContainer,
+    .homeContainer,
+    .networkContainer {
+      .header {
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        position: relative;
+        width: 90%;
+        .leftHeader {
+          @include flex(row, center, center);
+          .leftIcon {
+            font-size: 80px;
+            margin-right: 20px;
+          }
+          .pcInfo {
+            @include flex(column, start, center);
+            height: 60px;
+            .pcName {
+              font-weight: bold;
+            }
+            .pcBrand {
+              font-size: 0.8rem;
+            }
+            .rename {
+              font-size: 0.8rem;
+              cursor: pointer;
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+        .rightHeader {
+          @include flex(row, center, end);
+          flex: 1;
+          flex-wrap: wrap;
+          .rightHeaderOptions {
+            @include flex(row, center, center);
+            margin-left: 35px;
+            padding: 7px 10px;
+            border-radius: 5px;
+            cursor: default;
+            // &:hover {
+            //   background-color: rgb(340, 340, 340, 0.5);
+            // }
+            span {
+              margin-right: 10px;
+              font-size: 2rem;
+              cursor: default;
+            }
+            .info {
+              @include flex(column, start, space-between);
+              height: 40px;
+              background-color: transparent;
+              .name {
+                font-weight: bold;
+                background-color: transparent;
+              }
+              .details {
+                font-size: 0.8rem;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bluetoothContainer {
+      .header {
+        // border: solid 1px;
+        margin-bottom: 20px;
+        .addDevice {
+          @include flex(column, center, center);
+          aspect-ratio: 1/1;
+          height: 220px;
+          font-weight: 600;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          border: 1px solid;
+          span {
+            font-size: 90px;
+            font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 200, "opsz" 48;
+          }
+        }
+        .viewMoreDevices {
+          border: solid 1px;
+          padding: 10px 0;
+          border-radius: 5px;
+          text-align: center;
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .networkContainer {
+      .header {
+        margin-bottom: 20px;
+        .leftHeader {
+          .netrworkName {
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+          .networkInfo {
+            @include flex(row, center, center);
+            padding: 3px;
+            .networkInfoIcon {
+              font-size: 1.1rem;
+              margin-right: 2px;
+            }
+            .wifiStatus {
+              font-size: 1rem;
+              text-align: center;
+            }
+          }
+        }
+
+        .rightHeader {
+          .properties {
+            padding: 1px;
+            @include flex(column, start, center);
+            .name {
+              font-weight: 600;
+              margin-bottom: 2.5px;
+            }
+            .details,
+            .additionalDetails {
+              font-size: 0.8rem;
+              margin-bottom: -1px;
+            }
+          }
+          .dataUsage {
+            padding: 7px 0 7px 0;
+            .name {
+              font-weight: 600;
+              margin-bottom: 2.5px;
+            }
+            .details {
+              font-size: 0.8rem;
+              margin-bottom: -1px;
+            }
+          }
+        }
+      }
+    }
+    .personalizationContainer {
+      .header {
+        @include flex(row, center, start);
+        margin-bottom: 20px;
+        gap: 40px;
+        .currentTheme {
+          height: 180px;
+          width: 300px;
+          border: solid 5px;
+          border-radius: 10px;
+          position: relative;
+          .currentTheme2 {
+            position: absolute;
+            aspect-ratio: 1.2/1;
+            height: 90px;
+            border: solid 1px;
+            bottom: 10px;
+            right: 10px;
+            border-radius: 5px;
+          }
+        }
+        .otherTheme {
+          .description {
+            width: 100%;
+            margin-bottom: 5px;
+          }
+          .themeContainer {
+            @include flex(row, start, start);
+            flex-wrap: wrap;
+            width: 500px;
+            gap: 10px;
+            .theme {
+              height: 100px;
+              width: 135px;
+              border: solid 1px;
+              position: relative;
+              border-radius: 7px;
+              .theme2 {
+                position: absolute;
+                bottom: 7px;
+                right: 7px;
+                border: solid 1px;
+                height: 50px;
+                border-radius: 5px;
+                aspect-ratio: 1.2/1;
+              }
+            }
+            .activeTheme {
+              transform: scale(1.12);
+              border: solid 3px;
+            }
+          }
+        }
+      }
+    }
+    // .appsContainer {
+    //   // background-color: green;
+    // }
+    // .accountsContainer {
+    //   // background-color: blue;
+    // }
+    // .timeContainer {
+    //   // background-color: violet;
+    // }
+    // .gamingContainer {
+    //   // background-color: gray;
+    // }
+    // .accessibilityContainer {
+    // }
+    // .privacyContainer {
+    // }
+    // .updateContainer {
+    // }
+
+    .hiddenItems {
+      .renameContainer {
+        @include flex(column, center, center);
+        position: absolute;
+        display: none;
+        border: solid 1px;
+        top: 25%;
+        left: 50%;
+        transform: translate(-75%, -50%);
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        .newPcNameInput {
+          padding: 10px 20px 10px 20px;
+          font-size: 1rem;
+          border: solid 1px;
+          border-radius: 20px;
+          outline: none;
+        }
+        .renameContainerBtns {
+          @include flex(row, center, space-around);
+          width: 100%;
+          margin-top: 20px;
+          button {
+            padding: 10px 15px;
+            cursor: pointer;
+            color: black;
+            border-radius: 20px;
+            border: solid 1px;
+            font-weight: 600;
+            &:hover {
+              opacity: 0.8;
+              background-color: lightgray;
+            }
+            &:active {
+              opacity: 0.5;
+            }
+          }
+          .confirmNewPcName {
+            background-color: blue;
+            border: none;
+            color: white;
+            &:hover {
+              background-color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
