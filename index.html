@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
+    <title>Settings</title>
+    <head>
+      <link
+        rel="icon"
+        type="image/png"
+        href="./src/others/icons/cogwheel.png"
+      />
+    </head>
+
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contentContainer">
+      <div class="leftSidebar">
+        <div class="heading">
+          <span class="material-symbols-outlined"> arrow_back </span>
+          <p>Setting</p>
+        </div>
+        <div class="accountContainer">
+          <img
+            src="./src/others/img/profile.jpg"
+            alt="account-profile"
+            class="accProfile"
+          />
+          <div class="accDetails">
+            <p class="userName">coldHeart</p>
+            <p class="accType">Local Account</p>
+          </div>
+        </div>
+        <div class="searchContainer">
+          <input type="text" id="search" placeholder="Find a setting" /><span
+            class="material-symbols-outlined close"
+          >
+            close
+          </span>
+          <span class="material-symbols-outlined search"> search </span>
+        </div>
+
+        <!----------------------------- Left Side Bar -->
+
+        <ul>
+          <li class="settingsChoices liActive">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> home </span>
+            <p>Home</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> wysiwyg </span>
+            <p>System</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> bluetooth </span>
+            <p>Bluetooth & devices</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> wifi </span>
+            <p>Network & internet</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> brush </span>
+            <p>Personalization</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> apps </span>
+            <p>Apps</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> person </span>
+            <p>Accounts</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> language </span>
+            <p>Time & language</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> stadia_controller </span>
+            <p>Gaming</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> accessibility_new </span>
+            <p>Accessbility</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> security </span>
+            <p>Privacy & security</p>
+          </li>
+          <li class="settingsChoices">
+            <div class="indicator"></div>
+            <span class="material-symbols-outlined"> update </span>
+            <p>Windows Update</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-----------------------------------CONTENTS -->
+
+      <div class="settingContents">
+        <!----------------------------------HOME -->
+
+        <div class="homeContainer contents activeContents">
+          <p id="title">Home</p>
+          <div class="mainContainer">
+            <div class="header">
+              <div class="leftHeader">
+                <span class="material-symbols-outlined leftIcon">
+                  computer
+                </span>
+                <div class="pcInfo">
+                  <div class="pcName"></div>
+                  <div class="pcBrand">Extensa 215-31</div>
+                  <div class="rename">Rename</div>
+                </div>
+              </div>
+              <div class="rightHeader">
+                <div class="rightHeaderOptions">
+                  <span class="material-symbols-outlined"> wifi </span>
+                  <div class="info">
+                    <div class="name">PLDThome2002</div>
+                    <div class="details">Connected, secured</div>
+                  </div>
+                </div>
+                <div class="rightHeaderOptions">
+                  <span class="material-symbols-outlined"> update </span>
+                  <div class="info">
+                    <div class="name">Windows Update</div>
+                    <div class="details">Last checked: 2 hours ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="settingsMainContent">
+              <div class="leftContent">
+                <div class="microsoft">
+                  <img
+                    class="defaultIcons mslogo"
+                    src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-microsoft-corporation-an-american-multinational-technology-company-logo-color-tal-revivo.png"
+                    alt="external-microsoft-corporation-an-american-multinational-technology-company-logo-color-tal-revivo"
+                  />
+                  <!-- <button>Offline</button> -->
+                  <div class="leftContentContents">
+                    <div class="microsoftTitle">
+                      Its all here with Microsoft account
+                    </div>
+                    <div class="microsoftDescription">
+                      When you sign in, you're connecting your favorite
+                      Microsoft apps and services to your device. You'll be able
+                      to back up your device, keep it more secure, and use
+                      Microsoft 365 apps and cloud storage.
+                    </div>
+                    <div class="msIconsContainer">
+                      <img
+                        class="defaultIcons"
+                        src="https://img.icons8.com/fluency/48/microsoft-word-2019.png"
+                        alt="microsoft-word-2019"
+                      />
+                      <img
+                        class="defaultIcons"
+                        src="https://img.icons8.com/fluency/48/microsoft-excel-2019.png"
+                        alt="microsoft-excel-2019"
+                      />
+                      <img
+                        class="defaultIcons"
+                        src="https://img.icons8.com/color/48/microsoft-powerpoint-2019--v1.png"
+                        alt="microsoft-powerpoint-2019--v1"
+                      />
+                      <img
+                        class="defaultIcons"
+                        src="https://img.icons8.com/fluency/48/windows-defender.png"
+                        alt="windows-defender"
+                      />
+                      <img
+                        class="defaultIcons"
+                        src="https://img.icons8.com/fluency/48/microsoft-onedrive-2019.png"
+                        alt="microsoft-onedrive-2019"
+                      />
+                      <img
+                        class="defaultIcons"
+                        src="https://img.icons8.com/fluency/48/microsoft-outlook-2019.png"
+                        alt="microsoft-outlook-2019"
+                      />
+                    </div>
+                  </div>
+                  <button class="signIn">Sign in</button>
+                </div>
+                <div class="devices">Bluetooth Devices</div>
+              </div>
+              <div class="rightContent">
+                <div class="recommendation"></div>
+                <div class="personalize"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!----------------------------------SYSTEM -->
+
+        <div class="systemContainer contents">
+          <p id="title">System</p>
+          <div class="mainContainer">
+            <div class="header">
+              <div class="leftHeader">
+                <span class="material-symbols-outlined leftIcon">
+                  computer
+                </span>
+                <div class="pcInfo">
+                  <div class="pcName">AcerExtensa-NEO</div>
+                  <div class="pcBrand">Extensa 215-31</div>
+                  <div class="rename">Rename</div>
+                </div>
+              </div>
+              <div class="rightHeader">
+                <div class="rightHeaderOptions">
+                  <span class="material-symbols-outlined"> grid_view </span>
+                  <div class="info">
+                    <div class="name">Microsoft 365</div>
+                    <div class="details">View benefits</div>
+                  </div>
+                </div>
+                <div class="rightHeaderOptions">
+                  <span class="material-symbols-outlined"> cloud </span>
+                  <div class="info">
+                    <div class="name">OneDrive</div>
+                    <div class="details">Manage</div>
+                  </div>
+                </div>
+                <div class="rightHeaderOptions">
+                  <span class="material-symbols-outlined"> update </span>
+                  <div class="info">
+                    <div class="name">Windows Update</div>
+                    <div class="details">Last checked: 2 hours ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------BLUETOOTH -->
+
+        <div class="bluetoothContainer contents">
+          <p id="title">Bluetooth & device</p>
+          <div class="mainContainer">
+            <div class="header">
+              <div class="addDevice">
+                <span class="material-symbols-outlined"> add </span>
+                Add device
+              </div>
+              <div class="viewMoreDevices">View more devices</div>
+              <div class="bluetoothStatus">
+                <ul class="mainSettingOptionUl">
+                  <li class="mainSettingOptionLi">
+                    <span class="material-symbols-outlined mainSettingIcon"
+                      >bluetooth</span
+                    >
+                    <div class="detailContainer">
+                      <div>Bluetooth</div>
+                      <div
+                        class="mainSettingDescription bluetoothDescriptionStatus"
+                      >
+                        Bluetooth is turned off
+                      </div>
+                    </div>
+                    <div class="defaultBtn">
+                      <div class="defaultBtnIndicator">Off</div>
+
+                      <button class="defaultBtnToogle navNext">
+                        <div class="defaultBtnWheel defaultBtnOff"></div>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------NETWORK -->
+
+        <div class="networkContainer contents">
+          <p id="title">Network & internet</p>
+          <div class="mainContainer">
+            <div class="header">
+              <div class="leftHeader">
+                <span class="material-symbols-outlined leftIcon">
+                  computer
+                </span>
+                <div class="pcInfo">
+                  <div class="netrworkName">WIFI(PLDThome2002)</div>
+                  <div class="networkInfo">
+                    <span class="material-symbols-outlined networkInfoIcon">
+                      language
+                    </span>
+                    <div class="wifiStatus">Connected, Secured</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rightHeader">
+                <div class="rightHeaderOptions" style="margin-right: 60px">
+                  <span class="material-symbols-outlined"> info </span>
+                  <div class="properties">
+                    <div class="name">Properties</div>
+                    <div class="details">Private network</div>
+                    <div class="additionalDetails">2.4 Ghz</div>
+                  </div>
+                </div>
+                <div class="rightHeaderOptions">
+                  <span class="material-symbols-outlined"> update </span>
+                  <div class="dataUsage">
+                    <div class="name">Data usage</div>
+                    <div class="details">11.47 GB, last 30 days</div>
+                  </div>
+                  <span
+                    class="material-symbols-outlined"
+                    style="margin-right: 0"
+                  >
+                    navigate_next
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------PERSONALIZATION -->
+
+        <div class="personalizationContainer contents">
+          <p id="title">Personalization</p>
+          <div class="mainContainer">
+            <div class="header">
+              <div class="currentTheme"><div class="currentTheme2"></div></div>
+              <div class="otherTheme">
+                <h1 class="description">Select a theme to apply</h1>
+                <div class="themeContainer">
+                  <!-- <div class="theme lightTheme activeTheme">
+                    <div class="theme2"></div>
+                  </div>
+                  <div class="theme darkTheme">
+                    <div class="theme2"></div>
+                  </div>
+                  <div class="theme goldenTheme">
+                    <div class="theme2"></div>
+                  </div>
+                  <div class="theme"><div class="theme2"></div></div>
+                  <div class="theme"><div class="theme2"></div></div>
+                  <div class="theme"><div class="theme2"></div></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------APPS -->
+
+        <div class="appsContainer contents">
+          <p id="title">Apps</p>
+          <div class="mainContainer">
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------ACCOUNTS -->
+
+        <div class="accountsContainer contents">
+          <p id="title">Accounts</p>
+          <div class="mainContainer">
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------TIME -->
+
+        <div class="timeContainer contents">
+          <p id="title">Time & language</p>
+          <div class="mainContainer">
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------GAMING -->
+
+        <div class="gamingContainer contents">
+          <p id="title">Gaming</p>
+          <div class="mainContainer">
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------ACCESIBILITY -->
+
+        <div class="accessibilityContainer contents">
+          <p id="title">Accesibility</p>
+          <div class="mainContainer">
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------PRIVACY -->
+
+        <div class="privacyContainer contents">
+          <p id="title">Privacy & security</p>
+          <div class="mainContainer">
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <!----------------------------------UPDATE -->
+
+        <div class="updateContainer contents">
+          <p id="title">Windows Update</p>
+          <div class="mainContainer">
+            <div class="settingsMainContent"></div>
+          </div>
+        </div>
+
+        <div class="hiddenItems">
+          <div class="renameContainer">
+            <input
+              type="text"
+              class="newPcNameInput"
+              placeholder="Input new pc name"
+            />
+            <div class="renameContainerBtns">
+              <button class="cancelNewPcName">cancel</button>
+              <button class="confirmNewPcName">ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/scripts/main.js"></script>
+    <script src="./src/scripts/contentArrays.js"></script>
+    <script src="./src/scripts/iconArrays.js"></script>
+    <script src="./src/scripts/descriptionArrays.js"></script>
+    <script src="./src/scripts/test.js"></script>
+  </body>
+</html>
