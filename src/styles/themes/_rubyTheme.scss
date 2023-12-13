@@ -1,0 +1,69 @@
+$defaultRubyThemeHover: rgba(220, 20, 60, 0.5);
+
+.rubyTheme {
+  color: black;
+  background-color: rgb(240, 128, 128);
+
+  .theme2 {
+    background-color: $defaultRubyThemeHover;
+  }
+
+  input {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+
+  span {
+    color: black;
+  }
+
+  #switchTheme {
+    background-color: rgb(139, 0, 0);
+    .wheel {
+      background-color: rgb(220, 20, 60);
+      transform: translateX(55%);
+    }
+  }
+
+  li {
+    .indicator {
+      background-color: black;
+    }
+    &:hover {
+      background-color: $defaultRubyThemeHover;
+    }
+  }
+  .liActive {
+    background-color: $defaultRubyThemeHover;
+  }
+
+  .rightHeaderOptions {
+    &:hover {
+      background-color: $defaultRubyThemeHover;
+    }
+  }
+
+  .microsoft,
+  .devices,
+  .recommendation,
+  .personalize {
+    background-color: rgb(178, 34, 34);
+  }
+
+  .mainSettingOptionLi,
+  .addDevice,
+  .viewMoreDevices {
+    background-color: rgb(178, 34, 34);
+    &:hover {
+      background-color: $defaultRubyThemeHover;
+    }
+  }
+  .signIn {
+    background-color: rgb(178, 34, 34);
+    border: solid 1px black;
+    color: black;
+    &:hover {
+      background-color: $defaultRubyThemeHover;
+    }
+  }
+}

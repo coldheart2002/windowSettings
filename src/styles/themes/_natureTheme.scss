@@ -1,0 +1,66 @@
+$defaultNatureThemeHover: rgba(144, 238, 144, 0.5);
+
+.natureTheme {
+  color: rgb(50, 50, 50);
+  background-color: rgb(233, 233, 233);
+  .theme2 {
+    background-color: rgba(144, 238, 144, 0.5);
+  }
+  input {
+    background-color: rgba(144, 238, 144, 0.3);
+  }
+  span {
+    color: rgb(50, 50, 50);
+  }
+
+  #switchTheme {
+    background-color: rgb(50, 50, 50);
+    .wheel {
+      background-color: rgb(233, 233, 233);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  li {
+    .indicator {
+      background-color: black;
+    }
+    &:hover {
+      background-color: $defaultNatureThemeHover;
+    }
+  }
+  .liActive {
+    background-color: $defaultNatureThemeHover;
+  }
+
+  .rightHeaderOptions {
+    &:hover {
+      background-color: rgba(144, 238, 144, 0.3);
+    }
+  }
+
+  .microsoft,
+  .devices,
+  .recommendation,
+  .personalize {
+    background-color: white;
+  }
+
+  .mainSettingOptionLi,
+  .addDevice,
+  .viewMoreDevices {
+    background-color: white;
+    &:hover {
+      background-color: rgba(144, 238, 144, 0.3);
+    }
+  }
+
+  .signIn {
+    background-color: white;
+    border: solid 1px black;
+    color: black;
+    &:hover {
+      background-color: rgba(144, 238, 144, 0.3);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+$defaultAmberThemeHover: rgba(255, 191, 0, 0.5);
+
+.amberTheme {
+  color: black;
+  background-color: rgb(255, 236, 179);
+
+  .theme2 {
+    background-color: rgba(255, 191, 0, 0.5);
+  }
+
+  input {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+
+  span {
+    color: black;
+  }
+
+  #switchTheme {
+    background-color: rgb(191, 127, 0);
+    .wheel {
+      background-color: rgb(255, 191, 0);
+      transform: translateX(55%);
+    }
+  }
+
+  li {
+    .indicator {
+      background-color: black;
+    }
+    &:hover {
+      background-color: $defaultAmberThemeHover;
+    }
+  }
+  .liActive {
+    background-color: $defaultAmberThemeHover;
+  }
+
+  .rightHeaderOptions {
+    &:hover {
+      background-color: $defaultAmberThemeHover;
+    }
+  }
+
+  .microsoft,
+  .devices,
+  .recommendation,
+  .personalize {
+    background-color: rgb(230, 153, 0);
+  }
+
+  .mainSettingOptionLi,
+  .addDevice,
+  .viewMoreDevices {
+    background-color: rgb(230, 153, 0);
+    &:hover {
+      background-color: $defaultAmberThemeHover;
+    }
+  }
+  .signIn {
+    background-color: rgb(230, 153, 0);
+    border: solid 1px black;
+    color: black;
+    &:hover {
+      background-color: $defaultAmberThemeHover;
+    }
+  }
+}
